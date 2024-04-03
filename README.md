@@ -1,1 +1,1 @@
-Prueba.exe --> mazeWidth= 20, mazeHeight= 20
+En "releases" hay un zip para Windows y otro para macOS
