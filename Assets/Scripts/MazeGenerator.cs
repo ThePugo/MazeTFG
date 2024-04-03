@@ -4,11 +4,12 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.UI.GridLayoutGroup;
 using UnityEngine.Rendering.VirtualTexturing;
+using System.Text;
 
 public class MazeGenerator : MonoBehaviour
 {
     [Range (5, 100)]
-    public int mazeWidth= 50, mazeHeight = 50; //dimensiones
+    public int mazeWidth= 20, mazeHeight = 20; //dimensiones
     private int startX, startY; //posición de inicio del algoritmo
     MazeCell[,] maze; //mapa del laberinto
 
@@ -20,7 +21,9 @@ public class MazeGenerator : MonoBehaviour
     public enum MazeAlgorithm
     {
         RecursiveBacktracking,
-        BinaryTree
+        BinaryTree,
+        Kruskal,
+        Prim
     }
     public static MazeAlgorithm SelectedAlgorithm { get; set; }
 
@@ -38,14 +41,21 @@ public class MazeGenerator : MonoBehaviour
         System.Random random = new System.Random();
         startX = random.Next(mazeWidth);
         startY = random.Next(mazeHeight);
-        if (SelectedAlgorithm == MazeAlgorithm.RecursiveBacktracking)
+        switch (SelectedAlgorithm)
         {
-            RecursiveBacktracking(startX, startY);
-        }
-        else if (SelectedAlgorithm == MazeAlgorithm.BinaryTree)
-        {
-            SelectStartCornerAndBias();
-            BinaryTreeAlgorithm();
+            case MazeAlgorithm.RecursiveBacktracking:
+                RecursiveBacktracking(startX, startY);
+                break;
+            case MazeAlgorithm.BinaryTree:
+                SelectStartCornerAndBias();
+                BinaryTreeAlgorithm();
+                break;
+            case MazeAlgorithm.Kruskal:
+                KruskalAlgorithm();
+                break;
+            case MazeAlgorithm.Prim:
+                PrimAlgorithm(startX, startY);
+                break;
         }
         return maze;
     }
@@ -157,7 +167,7 @@ public class MazeGenerator : MonoBehaviour
             int newX = x + GetDirectionDelta(direction).x;
             int newY = y + GetDirectionDelta(direction).y;
 
-            if (IsCellValid(newX, newY) && !maze[newX, newY].visited)
+            if (IsCellValid(newX, newY))
             {
                 //rompe las paredes entre la celda actual y la próxima celda
                 BreakWalls(new Vector2Int(x, y), new Vector2Int(newX, newY));
@@ -208,7 +218,6 @@ public class MazeGenerator : MonoBehaviour
             xStep = 1;
             yStep = -1;
         }
-        print(currentCell.x +","+currentCell.y);
 
         for (int x = xStart; (startX < xEnd) ? x < xEnd : x > xEnd; x += xStep)
         {
@@ -238,7 +247,142 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
+    void KruskalAlgorithm()
+    {
+        //Lista para almacenar todos los posibles muros a derribar
+        List<KeyValuePair<Vector2Int, Vector2Int>> walls = new List<KeyValuePair<Vector2Int, Vector2Int>>();
 
+        //Rellenar la lista de muros posibles
+        for (int x = 0; x < mazeWidth; x++)
+        {
+            for (int y = 0; y < mazeHeight; y++)
+            {
+                //por cada celda, se añade el muro posible tanto vertical como el horizontal
+                if (x < mazeWidth - 1)
+                {
+                    walls.Add(new KeyValuePair<Vector2Int, Vector2Int>(new Vector2Int(x, y), new Vector2Int(x + 1, y)));
+                }
+                if (y < mazeHeight - 1)
+                {
+                    walls.Add(new KeyValuePair<Vector2Int, Vector2Int>(new Vector2Int(x, y), new Vector2Int(x, y + 1)));
+                }
+            }
+        }
+
+        //Se cogen todos los muros aleatorios
+        System.Random rng = new System.Random();
+        int n = walls.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            var value = walls[k];
+            walls[k] = walls[n];
+            walls[n] = value;
+        }
+
+        // Inicializa las estructuras para el seguimiento de conjuntos disjuntos
+        UnionFind unionFind = new UnionFind(mazeWidth * mazeHeight);
+
+        foreach (var wall in walls)
+        {
+            Vector2Int cell1 = wall.Key;
+            Vector2Int cell2 = wall.Value;
+
+            //pasamos los índices de cada celda de representación bidimensional a unidimensional
+            int cell1Index = cell1.x + cell1.y * mazeWidth;
+            int cell2Index = cell2.x + cell2.y * mazeWidth;
+
+            //si las celdas no están ya conectadas, derriba el muro entre ellas
+            if (!unionFind.Connected(cell1Index, cell2Index))
+            {
+                //une las celdas de forma unidimensional y de forma bidimensional corta las paredes entre las celdas
+                unionFind.Union(cell1Index, cell2Index);
+                BreakWalls(cell1, cell2);
+            }
+        }
+    }
+
+    void PrimAlgorithm(int x, int y)
+    {
+        //lista de celdas frontera
+        List<Vector2Int> frontierCells = new List<Vector2Int>();
+        Vector2Int currentCell = new Vector2Int(x, y);
+        maze[currentCell.x, currentCell.y].visited = true;
+        //añade las fronteras de la celda actual a la lista de fronteras
+        AddFrontierCells(currentCell, ref frontierCells);
+
+        while (frontierCells.Count > 0)
+        {
+            //coge una frontera aleatoria
+            int rndIndex = UnityEngine.Random.Range(0, frontierCells.Count);
+            Vector2Int frontierCell = frontierCells[rndIndex];
+            //coge una celda conectada a la celda frontera
+            Vector2Int nextCell = GetConnectedCell(frontierCell);
+
+            //rompe la pared entre la celda frontera y la escogida
+            BreakWalls(frontierCell, nextCell);
+
+            maze[frontierCell.x, frontierCell.y].visited = true;
+            //añade las celdas frontera de la celda frontera ya visitada a la lista de fronteras
+            AddFrontierCells(frontierCell, ref frontierCells);
+            //quita de la lista de celdas frontera la celda frontera ya visitada
+            frontierCells.RemoveAt(rndIndex);
+        }
+    }
+
+    List<Vector2Int> direcciones = new List<Vector2Int>
+    {
+        new Vector2Int(0, 1), // Arriba
+        new Vector2Int(0, -1), // Abajo
+        new Vector2Int(-1, 0), // Izquierda
+        new Vector2Int(1, 0) // Derecha
+    };
+
+    //método que añade a la lista de celdas frontera todas las fronteras de la celda pasada por parámetro
+    void AddFrontierCells(Vector2Int cell, ref List<Vector2Int> frontierCells)
+    {
+        foreach (var direction in direcciones)
+        {
+            //se miran todas las fronteras de la celda pasada por parámetro y se añaden a la lista
+            Vector2Int adjacentCell = cell + direction;
+            if (IsCellValid(adjacentCell.x, adjacentCell.y) && !frontierCells.Contains(adjacentCell))
+            {
+                frontierCells.Add(adjacentCell);
+            }
+        }
+    }
+
+    //método que consigue una celda aleatoria conectada a la celda pasada por parámetro
+    Vector2Int GetConnectedCell(Vector2Int frontierCell)
+    {
+        List<Vector2Int> validCells = new List<Vector2Int>();
+        foreach (var direction in direcciones)
+        {
+            Vector2Int adjacentCell = frontierCell + direction;
+            if (IsWithinBounds(adjacentCell) && maze[adjacentCell.x, adjacentCell.y].visited)
+            {
+                validCells.Add(adjacentCell);
+            }
+        }
+
+        if (validCells.Count > 0)
+        {
+            int rndIndex = UnityEngine.Random.Range(0, validCells.Count);
+            return validCells[rndIndex];
+        }
+        else
+        {
+            //devuelve un valor que indica claramente que no se encontró ninguna celda válida.
+            return new Vector2Int(-1, -1);
+        }
+    }
+
+    //método que comprueba si la celda pasada por parámetro está dentro de los límites del laberinto
+    bool IsWithinBounds(Vector2Int cell)
+    {
+        return cell.x >= 0 && cell.x < mazeWidth && cell.y >= 0 && cell.y < mazeHeight;
+    }
 
     // Función auxiliar para obtener el desplazamiento basado en la dirección
     Vector2Int GetDirectionDelta(Direction direction)

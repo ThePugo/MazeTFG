@@ -14,4 +14,15 @@ public class MainMenu : MonoBehaviour
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.RecursiveBacktracking;
         SceneManager.LoadScene("escena");
     }
+    public void OnKruskalButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Kruskal;
+        SceneManager.LoadScene("escena");
+    }
+
+    public void OnPrimButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Prim;
+        SceneManager.LoadScene("escena");
+    }
 }
