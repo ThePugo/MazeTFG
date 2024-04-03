@@ -25,4 +25,21 @@ public class MainMenu : MonoBehaviour
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Prim;
         SceneManager.LoadScene("escena");
     }
+
+    public void OnAldousBroderButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.AldousBroder;
+        SceneManager.LoadScene("escena");
+    }
+
+    public void OnGrowingTreeButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.GrowingTree;
+        SceneManager.LoadScene("escena");
+    }
+    public void OnHuntAndKillButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.HuntAndKill;
+        SceneManager.LoadScene("escena");
+    }
 }

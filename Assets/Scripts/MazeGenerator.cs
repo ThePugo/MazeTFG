@@ -23,7 +23,10 @@ public class MazeGenerator : MonoBehaviour
         RecursiveBacktracking,
         BinaryTree,
         Kruskal,
-        Prim
+        Prim,
+        AldousBroder,
+        GrowingTree,
+        HuntAndKill
     }
     public static MazeAlgorithm SelectedAlgorithm { get; set; }
 
@@ -55,6 +58,15 @@ public class MazeGenerator : MonoBehaviour
                 break;
             case MazeAlgorithm.Prim:
                 PrimAlgorithm(startX, startY);
+                break;
+            case MazeAlgorithm.AldousBroder:
+                AldousBroderAlgorithm(startX, startY);
+                break;
+            case MazeAlgorithm.GrowingTree:
+                GrowingTreeAlgorithm(startX, startY);
+                break;
+            case MazeAlgorithm.HuntAndKill:
+                HuntAndKillAlgorithm(startX, startY);
                 break;
         }
         return maze;
@@ -307,7 +319,7 @@ public class MazeGenerator : MonoBehaviour
     {
         //lista de celdas frontera
         List<Vector2Int> frontierCells = new List<Vector2Int>();
-        Vector2Int currentCell = new Vector2Int(x, y);
+        currentCell = new Vector2Int(x, y);
         maze[currentCell.x, currentCell.y].visited = true;
         //añade las fronteras de la celda actual a la lista de fronteras
         AddFrontierCells(currentCell, ref frontierCells);
@@ -382,6 +394,207 @@ public class MazeGenerator : MonoBehaviour
     bool IsWithinBounds(Vector2Int cell)
     {
         return cell.x >= 0 && cell.x < mazeWidth && cell.y >= 0 && cell.y < mazeHeight;
+    }
+
+    void AldousBroderAlgorithm(int x, int y)
+    {
+        int remaining = mazeWidth * mazeHeight - 1; //Total de celdas menos la celda inicial.
+        currentCell = new Vector2Int(x, y);
+        // Marca la celda inicial como visitada.
+        maze[x, y].visited = true;
+
+        // Continúa mientras haya celdas no visitadas.
+        while (remaining > 0)
+        {
+            // Obtiene direcciones en orden aleatorio.
+            List<Direction> randomDirections = GetRandomDirections();
+
+            foreach (var direction in randomDirections)
+            {
+                // Calcula la próxima celda basada en la dirección actual.
+                Vector2Int delta = GetDirectionDelta(direction);
+                Vector2Int nextCell = new Vector2Int(currentCell.x + delta.x, currentCell.y + delta.y);
+
+                // Verifica si la celda está dentro de los límites.
+                if (IsWithinBounds(nextCell))
+                {
+                    // Si la celda no ha sido visitada.
+                    if (!maze[nextCell.x, nextCell.y].visited)
+                    {
+                        // Rompe las paredes entre la celda actual y la próxima celda.
+                        BreakWalls(currentCell, nextCell);
+
+                        // Marca la celda como visitada.
+                        maze[nextCell.x, nextCell.y].visited = true;
+
+                        // Decrementa el contador de celdas restantes.
+                        remaining--;
+                    }
+
+                    // Mueve a la nueva celda.
+                    currentCell = nextCell;
+                    break; // Sal de la iteración de direcciones una vez que te mueves.
+                }
+            }
+        }
+    }
+
+    void GrowingTreeAlgorithm(int x, int y)
+    {
+        //Lista de celdas activas.
+        List<Vector2Int> activeCells = new List<Vector2Int>();
+
+        //selecciona una celda aleatoria y la añade a la lista.
+        currentCell = new Vector2Int(x, y);
+        activeCells.Add(currentCell);
+        maze[x, y].visited = true;
+
+        // Continúa mientras la lista no esté vacía.
+        while (activeCells.Count > 0)
+        {
+            //Selecciona una celda de la lista
+            int index = ChooseIndex(activeCells.Count);
+            currentCell = activeCells[index];
+
+            // Obtiene direcciones aleatorias para buscar vecinos no visitados.
+            List<Direction> randomDirections = GetRandomDirections();
+            bool foundUnvisitedNeighbor = false;
+
+            foreach (var direction in randomDirections)
+            {
+                Vector2Int delta = GetDirectionDelta(direction);
+                Vector2Int nextCell = new Vector2Int(currentCell.x + delta.x, currentCell.y + delta.y);
+
+                // Verifica si el vecino está dentro de los límites y no ha sido visitado.
+                if (IsWithinBounds(nextCell) && !maze[nextCell.x, nextCell.y].visited)
+                {
+                    // Rompe las paredes y marca el vecino como visitado.
+                    BreakWalls(currentCell, nextCell);
+                    maze[nextCell.x, nextCell.y].visited = true;
+
+                    // Añade el vecino a la lista de celdas activas.
+                    activeCells.Add(nextCell);
+                    foundUnvisitedNeighbor = true;
+                    break;
+                }
+            }
+
+            // Si no se encontró ningún vecino no visitado, elimina la celda actual de la lista.
+            if (!foundUnvisitedNeighbor)
+            {
+                activeCells.RemoveAt(index);
+            }
+        }
+    }
+
+    // Método para elegir el índice de la celda activa a procesar.
+    int ChooseIndex(int count)
+    {
+        // Siempre elige la última celda añadida (comportamiento similar al Backtracking recursivo).
+        return count - 1;
+        //Se podría hacer return Random(count) o return 0 para coger la celda añadida más antigua (similar a árbol binario)
+    }
+
+    void HuntAndKillAlgorithm(int x, int y)
+    {
+
+        maze[x, y].visited = true;
+
+        while (true)
+        {
+            Vector2Int? walkResult = Walk(x, y);
+
+            if (walkResult.HasValue)
+            {
+                x = walkResult.Value.x;
+                y = walkResult.Value.y;
+            }
+            else
+            {
+                Vector2Int? huntResult = Hunt();
+                if (!huntResult.HasValue)
+                {
+                    // Termina el algoritmo si Hunt no encuentra un nuevo punto de inicio.
+                    break;
+                }
+                else
+                {
+                    x = huntResult.Value.x;
+                    y = huntResult.Value.y;
+                }
+            }
+        }
+    }
+
+    Vector2Int? Walk(int x, int y)
+    {
+        List<Direction> randomDirections = GetRandomDirections();
+        foreach (var direction in randomDirections)
+        {
+            Vector2Int delta = GetDirectionDelta(direction);
+            int nx = x + delta.x;
+            int ny = y + delta.y;
+
+            if (IsWithinBounds(new Vector2Int(nx, ny)) && !maze[nx, ny].visited)
+            {
+                BreakWalls(new Vector2Int(x, y), new Vector2Int(nx, ny));
+                maze[nx, ny].visited = true;
+                return new Vector2Int(nx, ny);
+            }
+        }
+
+        return null;
+    }
+
+    Vector2Int? Hunt()
+    {
+        for (int y = 0; y < mazeHeight; y++)
+        {
+            for (int x = 0; x < mazeWidth; x++)
+            {
+                if (!maze[x, y].visited && HasVisitedNeighbors(x, y))
+                {
+                    // Encuentra y conecta con un vecino visitado.
+                    ConnectToVisitedNeighbor(x, y);
+                    maze[x, y].visited = true;
+                    return new Vector2Int(x, y);
+                }
+            }
+        }
+        return null;
+    }
+
+    void ConnectToVisitedNeighbor(int x, int y)
+    {
+        List<Direction> directions = GetRandomDirections();
+        foreach (var direction in directions)
+        {
+            Vector2Int delta = GetDirectionDelta(direction);
+            int nx = x + delta.x;
+            int ny = y + delta.y;
+
+            if (IsWithinBounds(new Vector2Int(nx, ny)) && maze[nx, ny].visited)
+            {
+                // Conecta con el primer vecino visitado encontrado y sale del método.
+                BreakWalls(new Vector2Int(x, y), new Vector2Int(nx, ny));
+                return; 
+            }
+        }
+    }
+
+    bool HasVisitedNeighbors(int x, int y)
+    {
+        foreach (var direction in directions)
+        {
+            Vector2Int delta = GetDirectionDelta(direction);
+            int nx = x + delta.x;
+            int ny = y + delta.y;
+            if (IsWithinBounds(new Vector2Int(nx, ny)) && maze[nx, ny].visited)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     // Función auxiliar para obtener el desplazamiento basado en la dirección
