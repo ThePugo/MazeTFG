@@ -42,4 +42,28 @@ public class MainMenu : MonoBehaviour
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.HuntAndKill;
         SceneManager.LoadScene("escena");
     }
+
+    public void OnWilsonButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Wilson;
+        SceneManager.LoadScene("escena");
+    }
+
+    public void OnRecursiveDivisionButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.RecursiveDivision;
+        SceneManager.LoadScene("escena");
+    }
+
+    public void OnSidewinderButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Sidewinder;
+        SceneManager.LoadScene("escena");
+    }
+
+    public void OnEllerButtonPressed()
+    {
+        MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Eller;
+        SceneManager.LoadScene("escena");
+    }
 }

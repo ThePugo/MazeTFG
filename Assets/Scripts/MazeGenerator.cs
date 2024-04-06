@@ -5,6 +5,7 @@ using UnityEngine;
 using static UnityEngine.UI.GridLayoutGroup;
 using UnityEngine.Rendering.VirtualTexturing;
 using System.Text;
+using System.Linq;
 
 public class MazeGenerator : MonoBehaviour
 {
@@ -26,7 +27,11 @@ public class MazeGenerator : MonoBehaviour
         Prim,
         AldousBroder,
         GrowingTree,
-        HuntAndKill
+        HuntAndKill,
+        Wilson,
+        RecursiveDivision,
+        Sidewinder,
+        Eller
     }
     public static MazeAlgorithm SelectedAlgorithm { get; set; }
 
@@ -51,24 +56,48 @@ public class MazeGenerator : MonoBehaviour
                 break;
             case MazeAlgorithm.BinaryTree:
                 SelectStartCornerAndBias();
-                BinaryTreeAlgorithm();
+                BinaryTree();
                 break;
             case MazeAlgorithm.Kruskal:
-                KruskalAlgorithm();
+                Kruskal();
                 break;
             case MazeAlgorithm.Prim:
-                PrimAlgorithm(startX, startY);
+                Prim(startX, startY);
                 break;
             case MazeAlgorithm.AldousBroder:
-                AldousBroderAlgorithm(startX, startY);
+                AldousBroder(startX, startY);
                 break;
             case MazeAlgorithm.GrowingTree:
-                GrowingTreeAlgorithm(startX, startY);
+                GrowingTree(startX, startY);
                 break;
             case MazeAlgorithm.HuntAndKill:
-                HuntAndKillAlgorithm(startX, startY);
+                HuntAndKill(startX, startY);
+                break;
+            case MazeAlgorithm.Wilson:
+                Wilson(startX, startY);
+                break;
+            case MazeAlgorithm.RecursiveDivision:
+                InitializeMazeOpen();
+                //Comienza la división desde todo el espacio del laberinto.
+                RecursiveDivision(0, 0, mazeWidth, mazeHeight, ChooseOrientation(mazeWidth, mazeHeight));
+                break;
+            case MazeAlgorithm.Sidewinder:
+                Sidewinder();
+                break;
+            case MazeAlgorithm.Eller:
+                Eller();
                 break;
         }
+        /*
+        if (IsMazePerfect())
+        {
+            print("Maze is perfect");
+        }
+        else
+        {
+            print("Maze is not perfect");
+        }
+        */
         return maze;
     }
     List<Direction> directions = new List<Direction>() {
@@ -190,7 +219,7 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    void BinaryTreeAlgorithm()
+    void BinaryTree()
     {
         currentCell = startCorner;
         int xStart=0, yStart=0, xEnd = 0, yEnd = 0, xStep = 0, yStep = 0;
@@ -259,7 +288,7 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    void KruskalAlgorithm()
+    void Kruskal()
     {
         //Lista para almacenar todos los posibles muros a derribar
         List<KeyValuePair<Vector2Int, Vector2Int>> walls = new List<KeyValuePair<Vector2Int, Vector2Int>>();
@@ -315,7 +344,7 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    void PrimAlgorithm(int x, int y)
+    void Prim(int x, int y)
     {
         //lista de celdas frontera
         List<Vector2Int> frontierCells = new List<Vector2Int>();
@@ -396,7 +425,7 @@ public class MazeGenerator : MonoBehaviour
         return cell.x >= 0 && cell.x < mazeWidth && cell.y >= 0 && cell.y < mazeHeight;
     }
 
-    void AldousBroderAlgorithm(int x, int y)
+    void AldousBroder(int x, int y)
     {
         int remaining = mazeWidth * mazeHeight - 1; //Total de celdas menos la celda inicial.
         currentCell = new Vector2Int(x, y);
@@ -439,7 +468,7 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    void GrowingTreeAlgorithm(int x, int y)
+    void GrowingTree(int x, int y)
     {
         //Lista de celdas activas.
         List<Vector2Int> activeCells = new List<Vector2Int>();
@@ -495,7 +524,7 @@ public class MazeGenerator : MonoBehaviour
         //Se podría hacer return Random(count) o return 0 para coger la celda añadida más antigua (similar a árbol binario)
     }
 
-    void HuntAndKillAlgorithm(int x, int y)
+    void HuntAndKill(int x, int y)
     {
 
         maze[x, y].visited = true;
@@ -597,6 +626,293 @@ public class MazeGenerator : MonoBehaviour
         return false;
     }
 
+    void Wilson(int x, int y)
+    {
+        maze[x, y].visited = true;
+
+        // Repite hasta que todas las celdas estén visitadas
+        while (AnyCellNotVisited())
+        {
+            Vector2Int cellNotVisited = ChooseRandomCellNotVisited();
+            List<Vector2Int> path = PerformRandomWalk(cellNotVisited);
+
+            // Añade el camino y elimina las paredes correspondientes
+            for (int i = 0; i < path.Count - 1; i++)
+            {
+                currentCell = path[i];
+                Vector2Int nextCell = path[i + 1];
+
+                maze[currentCell.x, currentCell.y].visited = true;
+                BreakWalls(currentCell, nextCell);
+            }
+            //se marca la última celda también como visitada
+            Vector2Int lastCell = path[path.Count - 1];
+            maze[lastCell.x, lastCell.y].visited = true;
+        }
+    }
+
+    bool AnyCellNotVisited()
+    {
+        for (int i = 0; i < mazeWidth; i++)
+        {
+            for (int j = 0; j < mazeHeight; j++)
+            {
+                if (!maze[i, j].visited) return true;
+            }
+        }
+        return false;
+    }
+
+    Vector2Int ChooseRandomCellNotVisited()
+    {
+        System.Random rand = new System.Random();
+        int x, y;
+        do
+        {
+            x = rand.Next(mazeWidth);
+            y = rand.Next(mazeHeight);
+        } while (maze[x, y].visited);
+
+        return new Vector2Int(x, y);
+    }
+
+    List<Vector2Int> PerformRandomWalk(Vector2Int start)
+    {
+        List<Vector2Int> path = new List<Vector2Int>();
+        Vector2Int current = start;
+        path.Add(current);
+
+        while (!maze[current.x, current.y].visited)
+        {
+            List<Direction> possibleDirections = GetRandomDirections();
+            System.Random rand = new System.Random();
+            Direction chosenDirection = possibleDirections[rand.Next(possibleDirections.Count)];
+            Vector2Int next = current + GetDirectionDelta(chosenDirection);
+            if (IsWithinBounds(next))
+            {
+                if (!path.Contains(next)) //Si no forma un bucle
+                {
+                    path.Add(next);
+                }
+                else //Si forma un bucle, elimina el bucle
+                {
+                    int loopStartIndex = path.IndexOf(next);
+                    path = path.GetRange(0, loopStartIndex + 1);
+                }
+                current = next;
+            }
+        }
+
+        return path;
+    }
+
+    void RecursiveDivision(int x, int y, int width, int height, Orientation orientation)
+    {
+        if (width < 2 || height < 2)
+        {
+            //El área es demasiado pequeña para dividir más.
+            return;
+        }
+
+        bool horizontal = orientation == Orientation.Horizontal;
+
+        //Decide dónde dibujar la nueva pared divisoria.
+        int wallPosition = horizontal ? UnityEngine.Random.Range(y, y + height - 1) : UnityEngine.Random.Range(x, x + width - 1);
+
+        //Decide dónde será el pasaje a través de la pared.
+        int passagePosition = horizontal ? UnityEngine.Random.Range(x, x + width) : UnityEngine.Random.Range(y, y + height);
+
+        //Dibuja la nueva pared y asegura un pasaje a través de ella.
+        if (horizontal)
+        {
+            for (int i = x; i < x + width; i++)
+            {
+                if (i != passagePosition)
+                {
+                    BuildWalls(new Vector2Int(i, wallPosition), new Vector2Int(i, wallPosition + 1));
+                }
+            }
+        }
+        else
+        {
+            for (int i = y; i < y + height; i++)
+            {
+                if (i != passagePosition)
+                {
+                    BuildWalls(new Vector2Int(wallPosition, i), new Vector2Int(wallPosition + 1, i));
+                }
+            }
+        }
+
+        //Recursividad para dividir las dos nuevas secciones creadas.
+        if (horizontal)
+        {
+            RecursiveDivision(x, y, width, wallPosition - y + 1, ChooseOrientation(width, wallPosition - y + 1));
+            RecursiveDivision(x, wallPosition + 1, width, y + height - wallPosition - 1, ChooseOrientation(width, y + height - wallPosition - 1));
+        }
+        else
+        {
+            RecursiveDivision(x, y, wallPosition - x + 1, height, ChooseOrientation(wallPosition - x + 1, height));
+            RecursiveDivision(wallPosition + 1, y, x + width - wallPosition - 1, height, ChooseOrientation(x + width - wallPosition - 1, height));
+        }
+    }
+
+    void InitializeMazeOpen()
+    {
+        for (int i = 0; i < mazeWidth; i++)
+        {
+            for (int j = 0; j < mazeHeight; j++)
+            {
+                maze[i, j].topWall = false;
+                maze[i, j].leftWall = false;
+                maze[0, j].leftWall = true;
+                maze[i, mazeHeight - 1].topWall = true;
+            }
+        }
+    }
+
+    Orientation ChooseOrientation(int width, int height)
+    {
+        if (width < height)
+        {
+            return Orientation.Horizontal;
+        }
+        else if (height < width)
+        {
+            return Orientation.Vertical;
+        }
+        else
+        {
+            return UnityEngine.Random.Range(0, 2) == 0 ? Orientation.Horizontal : Orientation.Vertical;
+        }
+    }
+
+    void Sidewinder()
+    {
+        // Iterar a través de cada fila
+        for (int y = 0; y < mazeWidth; y++)
+        {
+            int runStart = 0;
+
+            // Iterar a través de cada columna
+            for (int x = 0; x < mazeHeight; x++)
+            {
+                // Se determina si se va a excavar hacia el este
+                bool carveEast = x < mazeHeight - 1 && (y == 0 || UnityEngine.Random.Range(0, 2) == 0);
+
+                if (carveEast)
+                {
+                    // Excavar hacia el este
+                    BreakWalls(new Vector2Int(x, y), new Vector2Int(x + 1, y));
+                }
+
+                // Se determina si se va a excavar hacia el norte
+                bool carveNorth = !carveEast || x == mazeHeight - 1;
+
+                if (carveNorth && y > 0)
+                {
+                    // Elegir una celda aleatoria del conjunto actual (run) para excavar hacia el norte
+                    int northCarveX = runStart + UnityEngine.Random.Range(0, x - runStart + 1);
+                    BreakWalls(new Vector2Int(northCarveX, y), new Vector2Int(northCarveX, y - 1));
+                    runStart = x + 1;
+                }
+            }
+        }
+    }
+
+    void Eller()
+    {
+        EllerSet setManager = new EllerSet();
+
+        for (int y = 0; y < mazeHeight; y++)
+        {
+            //Procesar fusiones horizontales en la fila actual
+            for (int x = 0; x < mazeWidth - 1; x++)
+            {
+                if (!setManager.IsInSet(new Vector2Int(x,y)))
+                {
+                    setManager.AddCell(new Vector2Int(x, y));
+                }
+                if (!setManager.IsInSet(new Vector2Int(x+1, y)))
+                {
+                    setManager.AddCell(new Vector2Int(x + 1, y));
+                }
+                //si es la última fila, se junta todo (no de forma aleatoria)
+                if (y == mazeHeight-1)
+                {
+                    if (!setManager.AreInSameSet(new Vector2Int(x, y), new Vector2Int(x + 1, y)))
+                    {
+                        BreakWalls(new Vector2Int(x, y), new Vector2Int(x + 1, y));
+                        setManager.MergeSets(new Vector2Int(x, y), new Vector2Int(x + 1, y));
+                    }
+                }
+                else
+                {
+                    bool shouldMerge = UnityEngine.Random.Range(0, 2) == 0;
+                    if (shouldMerge && !setManager.AreInSameSet(new Vector2Int(x, y), new Vector2Int(x + 1, y)))
+                    {
+                        BreakWalls(new Vector2Int(x, y), new Vector2Int(x + 1, y));
+                        setManager.MergeSets(new Vector2Int(x, y), new Vector2Int(x + 1, y));
+                    }
+                }
+            }
+            List<Vector2Int> cellsToKeep = new List<Vector2Int>();
+            if (y < mazeHeight - 1)
+            {
+                foreach (var setId in setManager.GetSetIds())
+                {
+                    var cellsInSet = setManager.GetCellsInSet(setId).ToList();
+
+                    // Asegurar al menos una conexión vertical por conjunto
+                    Vector2Int cellToExtend = cellsInSet[UnityEngine.Random.Range(0, cellsInSet.Count)];
+                    Vector2Int cellBelow = cellToExtend + Vector2Int.up; // Celda directamente debajo
+
+                    //Romper pared hacia abajo para asegurar conexión
+                    BreakWalls(cellToExtend, cellBelow);
+                    setManager.AddCell(cellBelow);
+                    setManager.MergeSets(cellToExtend, cellBelow); //Agregar la celda de abajo al conjunto
+                    cellsToKeep.Add(cellBelow);
+
+                    //Crear conexiones verticales adicionales (aleatorio)
+                    foreach (var cell in cellsInSet)
+                    {
+                        if (UnityEngine.Random.Range(0, 2) == 0 && cell != cellToExtend)
+                        {
+                            Vector2Int additionalCellBelow = cell + Vector2Int.up;
+
+                            //Romper pared hacia abajo para las conexiones verticales adicionales
+                            BreakWalls(cell, additionalCellBelow);
+                            setManager.AddCell(additionalCellBelow);
+                            setManager.MergeSets(cell, additionalCellBelow); //Añadir celda adicional de abajo al conjunto
+                            cellsToKeep.Add(additionalCellBelow);
+                        }
+                    }
+                }
+            }
+            setManager.PrepareNextRow(cellsToKeep);
+        }
+    }
+
+    void BuildWalls(Vector2Int primaryCell, Vector2Int secondaryCell)
+    {
+        if (primaryCell.x > secondaryCell.x)
+        {
+            maze[primaryCell.x, primaryCell.y].leftWall = true;
+        }
+        else if (primaryCell.x < secondaryCell.x)
+        {
+            maze[secondaryCell.x, secondaryCell.y].leftWall = true;
+        }
+        else if (primaryCell.y < secondaryCell.y)
+        {
+            maze[primaryCell.x, primaryCell.y].topWall = true;
+        }
+        else if (primaryCell.y > secondaryCell.y)
+        {
+            maze[secondaryCell.x, secondaryCell.y].topWall = true;
+        }
+    }
+
     // Función auxiliar para obtener el desplazamiento basado en la dirección
     Vector2Int GetDirectionDelta(Direction direction)
     {
@@ -614,6 +930,79 @@ public class MazeGenerator : MonoBehaviour
                 return new Vector2Int(0, 0);
         }
     }
+
+    public bool IsMazePerfect()
+    {
+        // Reinicia el estado visitado de todas las celdas
+        for (int i = 0; i < mazeWidth; i++)
+        {
+            for (int j = 0; j < mazeHeight; j++)
+            {
+                maze[i, j].visited = false;
+            }
+        }
+
+        // Inicia DFS desde la esquina superior izquierda (o cualquier otra celda que prefieras)
+        DFS(0, 0);
+
+        // Verifica si todas las celdas han sido visitadas
+        for (int i = 0; i < mazeWidth; i++)
+        {
+            for (int j = 0; j < mazeHeight; j++)
+            {
+                if (!maze[i, j].visited)
+                {
+                    return false; // Si alguna celda no fue visitada, el laberinto no es perfecto
+                }
+            }
+        }
+
+        return true; // Todas las celdas fueron visitadas
+    }
+
+    void DFS(int x, int y)
+    {
+        // Marca la celda actual como visitada
+        maze[x, y].visited = true;
+
+        // Lista de todas las direcciones posibles
+        List<Direction> directions = new List<Direction> { Direction.Up, Direction.Down, Direction.Left, Direction.Right };
+
+        foreach (var direction in directions)
+        {
+            Vector2Int nextCell = new Vector2Int(x, y) + GetDirectionDelta(direction);
+
+            // Comprueba si la celda vecina está dentro de los límites y si hay un camino hacia ella
+            if (IsWithinBounds(nextCell) && CanMove(x, y, direction) && !maze[nextCell.x, nextCell.y].visited)
+            {
+                DFS(nextCell.x, nextCell.y); // Continúa la búsqueda en profundidad desde la celda vecina
+            }
+        }
+    }
+
+    bool CanMove(int x, int y, Direction direction)
+    {
+        // Este método debe verificar si se puede mover en la dirección dada desde la celda actual
+        // Esto implica comprobar si no hay paredes bloqueando el movimiento en esa dirección
+        // La implementación específica dependerá de cómo estén definidas tus paredes
+        // Aquí tienes un esquema básico:
+        switch (direction)
+        {
+            case Direction.Up:
+                return !maze[x, y].topWall;
+            case Direction.Down:
+                // Necesitarás verificar la celda debajo de la actual
+                return y > 0 && !maze[x, y - 1].topWall;
+            case Direction.Left:
+                return !maze[x, y].leftWall;
+            case Direction.Right:
+                // Necesitarás verificar la celda a la derecha de la actual
+                return x < mazeWidth - 1 && !maze[x + 1, y].leftWall;
+            default:
+                return false;
+        }
+    }
+
 }
 
 public enum Direction
@@ -624,11 +1013,16 @@ public enum Direction
     Right
 }
 
+public enum Orientation
+{
+    Horizontal,
+    Vertical
+}
+
 public class MazeCell
 {
     public bool visited;
     public int x, y;
-
     public bool topWall;
     public bool leftWall;
 

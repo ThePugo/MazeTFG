@@ -203,6 +203,11 @@ PrefabInstance:
       insertIndex: 2
       addedObject: {fileID: 344231176}
   m_SourcePrefab: {fileID: 100100000, guid: 5fa0666f6bfe32748b4410e7debf1228, type: 3}
+--- !u!1 &222360840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 701747305054446839, guid: 5fa0666f6bfe32748b4410e7debf1228, type: 3}
+  m_PrefabInstance: {fileID: 222360839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &344231171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5164362865924329476, guid: 5fa0666f6bfe32748b4410e7debf1228, type: 3}
@@ -236,8 +241,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2007710307}
-  - component: {fileID: 2007710306}
-  - component: {fileID: 2007710305}
+  - component: {fileID: 2007710309}
+  - component: {fileID: 2007710308}
   m_Layer: 0
   m_Name: Maze
   m_TagString: Untagged
@@ -245,39 +250,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2007710305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007710304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49917d32dd7949147975762ea4274223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mazeGenerator: {fileID: 2007710306}
-  mazeCellPrefab: {fileID: 8888082352810920970, guid: 29dd1d063ee14eb4caf03d1678aa5f28, type: 3}
-  doorPrefab: {fileID: 7876474911223802248, guid: dcde756b7145a3f419673d874c288fdf, type: 3}
-  player: {fileID: 701747305054446839, guid: 5fa0666f6bfe32748b4410e7debf1228, type: 3}
-  exitWall: {fileID: 1085931918542807040, guid: 52280f8ac6c481c4d8b6c837b1b6e62c, type: 3}
-  key: {fileID: 374289202576707483, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
-  CellSize: 4
---- !u!114 &2007710306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007710304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5eff254ca35e7648b025654aaac7482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mazeWidth: 20
-  mazeHeight: 20
 --- !u!4 &2007710307
 Transform:
   m_ObjectHideFlags: 0
@@ -293,6 +265,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007710308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007710304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5eff254ca35e7648b025654aaac7482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mazeWidth: 15
+  mazeHeight: 15
+--- !u!114 &2007710309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007710304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49917d32dd7949147975762ea4274223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mazeGenerator: {fileID: 2007710308}
+  mazeCellPrefab: {fileID: 8888082352810920970, guid: 29dd1d063ee14eb4caf03d1678aa5f28, type: 3}
+  doorPrefab: {fileID: 7876474911223802248, guid: dcde756b7145a3f419673d874c288fdf, type: 3}
+  player: {fileID: 222360840}
+  exitWall: {fileID: 1085931918542807040, guid: 52280f8ac6c481c4d8b6c837b1b6e62c, type: 3}
+  key: {fileID: 374289202576707483, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
+  CellSize: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
