@@ -67,6 +67,45 @@ public class EnemyAI : MonoBehaviour
         {
             currentState = State.Chase;
         }
+
+        if (CanHearPlayer())
+        {
+            currentState = State.Chase;
+        }
+    }
+
+    private bool CanHearPlayer()
+    {
+        Footsteps playerFootsteps = player.GetComponent<Footsteps>();
+        if (playerFootsteps != null)
+        {
+            float distanceToPlayer = Vector3.Distance(player.position, transform.position);
+            float hearingRange;
+
+            //el enemigo tiene un rango de audición básico para oír al jugador caminando
+            if (playerFootsteps.footstepsSound.enabled)
+            {
+                hearingRange = viewDistance;
+            }
+            //el rango de audición se extiende si el jugador está corriendo
+            else if (playerFootsteps.sprintSound.enabled)
+            {
+                hearingRange = viewDistance + 10f;
+            }
+            else
+            {
+                //el jugador no hace ruido:
+                return false;
+            }
+
+            //comprueba si el jugador está dentro del rango de audición
+            if (distanceToPlayer <= hearingRange)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private bool IsPlayerInSight()

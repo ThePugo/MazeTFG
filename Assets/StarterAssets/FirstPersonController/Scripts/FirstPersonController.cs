@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro.EditorUtilities;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -51,6 +52,8 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		[HideInInspector] public Footsteps _staminaController;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -97,6 +100,7 @@ namespace StarterAssets
 
 		private void Start()
 		{
+			_staminaController = GetComponent<Footsteps>();
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM
@@ -110,10 +114,19 @@ namespace StarterAssets
 			_fallTimeoutDelta = FallTimeout;
 		}
 
+		public void SetMoveSpeed(float speed)
+		{
+			MoveSpeed = speed;
+		}
+
 		private void Update()
 		{
-			JumpAndGravity();
-			GroundedCheck();
+            JumpAndGravity();
+            if (_staminaController.isDrained)
+            {
+                _input.sprint = false;
+            }
+            GroundedCheck();
 			Move();
 		}
 
