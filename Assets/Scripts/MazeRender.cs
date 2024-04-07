@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using static UnityEngine.UI.GridLayoutGroup;
 
 public class MazeRender : MonoBehaviour
@@ -9,7 +11,7 @@ public class MazeRender : MonoBehaviour
     [SerializeField] MazeGenerator mazeGenerator;
     [SerializeField] GameObject mazeCellPrefab;
     [SerializeField] GameObject doorPrefab;
-    [SerializeField] GameObject player;
+    [SerializeField] GameObject enemy;
     [SerializeField] GameObject exitWall;
     [SerializeField] GameObject key;
 
@@ -72,7 +74,55 @@ public class MazeRender : MonoBehaviour
                 }
             }
         }
+        NavMeshSurface surface = GetComponent<NavMeshSurface>();
+        surface.BuildNavMesh();
+        Vector3[] patrolPoints = GenerateStrategicPatrolPoints();
+        enemy.GetComponent<EnemyAI>().SetPatrolPoints(patrolPoints);
+        Instantiate(enemy, new Vector3((float)randomi * CellSize, 0f, (float)randomj * CellSize), Quaternion.identity);
         PlaceExit();
+    }
+
+    private Vector3[] GenerateStrategicPatrolPoints()
+    {
+        List<Vector3> patrolPoints = new List<Vector3>
+    {
+        // Esquina superior izquierda
+        new Vector3(0, 0, (mazeGenerator.mazeHeight - 1) * CellSize),
+
+        // Esquina superior derecha
+        new Vector3((mazeGenerator.mazeWidth - 1) * CellSize, 0, (mazeGenerator.mazeHeight - 1) * CellSize),
+
+        // Esquina inferior derecha
+        new Vector3((mazeGenerator.mazeWidth - 1) * CellSize, 0, 0),
+
+        // Esquina inferior izquierda
+        new Vector3(0, 0, 0),
+
+        // Centro superior
+        new Vector3((mazeGenerator.mazeWidth - 1) / 2f * CellSize, 0, (mazeGenerator.mazeHeight - 1) * CellSize),
+
+        // Centro inferior
+        new Vector3((mazeGenerator.mazeWidth - 1) / 2f * CellSize, 0, 0),
+    };
+
+        // Mezclar los puntos de patrulla
+        Shuffle(patrolPoints);
+
+        return patrolPoints.ToArray();
+    }
+
+    private void Shuffle(List<Vector3> list)
+    {
+        System.Random rng = new System.Random();
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            Vector3 value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
     }
 
     private void PlaceExit()

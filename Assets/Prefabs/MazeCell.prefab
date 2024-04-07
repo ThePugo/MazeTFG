@@ -67,6 +67,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223591506908451708}
     m_Modifications:
+    - target: {fileID: 2342725370934827714, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846823981788647888, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -119,6 +123,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackRoomsCeilingTile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869337257286405725, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -137,6 +149,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223591506908451708}
     m_Modifications:
+    - target: {fileID: 2342725370934827714, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846823981788647888, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -188,6 +204,14 @@ PrefabInstance:
     - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_Name
       value: BackRoomsCeilingTile (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869337257286405725, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -251,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightWall
       objectReference: {fileID: 0}
+    - target: {fileID: 1816727081475426175, guid: ef5c9912aa7137c4ea3a05228486a574, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -274,6 +302,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223591506908451708}
     m_Modifications:
+    - target: {fileID: 2342725370934827714, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846823981788647888, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -325,6 +357,14 @@ PrefabInstance:
     - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_Name
       value: BackRoomsCeilingTile
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869337257286405725, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -387,6 +427,10 @@ PrefabInstance:
     - target: {fileID: 1816727081475426175, guid: ef5c9912aa7137c4ea3a05228486a574, type: 3}
       propertyPath: m_Name
       value: BottomWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816727081475426175, guid: ef5c9912aa7137c4ea3a05228486a574, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -455,6 +499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopWall
       objectReference: {fileID: 0}
+    - target: {fileID: 1816727081475426175, guid: ef5c9912aa7137c4ea3a05228486a574, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -478,6 +526,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223591506908451708}
     m_Modifications:
+    - target: {fileID: 2342725370934827714, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846823981788647888, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -530,6 +582,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackRoomsCeilingTile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869337257286405725, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -548,6 +608,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223591506908451708}
     m_Modifications:
+    - target: {fileID: 2342725370934827714, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846823981788647888, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -599,6 +663,14 @@ PrefabInstance:
     - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
       propertyPath: m_Name
       value: BackRoomsCeilingTile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190592186628639594, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869337257286405725, guid: c78f5035074706243ad33056903ee4e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -661,6 +733,10 @@ PrefabInstance:
     - target: {fileID: 1816727081475426175, guid: ef5c9912aa7137c4ea3a05228486a574, type: 3}
       propertyPath: m_Name
       value: LeftWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816727081475426175, guid: ef5c9912aa7137c4ea3a05228486a574, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -741,6 +817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 5367607569280578736, guid: c7675d94da8318e46b897fc4d3c3fd70, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5871971350436189541, guid: c7675d94da8318e46b897fc4d3c3fd70, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -756,8 +836,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5367607569280578736, guid: c7675d94da8318e46b897fc4d3c3fd70, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5574518535707015259}
   m_SourcePrefab: {fileID: 100100000, guid: c7675d94da8318e46b897fc4d3c3fd70, type: 3}
+--- !u!1 &3577405295648273954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5367607569280578736, guid: c7675d94da8318e46b897fc4d3c3fd70, type: 3}
+  m_PrefabInstance: {fileID: 8924143849939255954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5574518535707015259
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3577405295648273954}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5791317811079186101, guid: 3607d07aec4887c40ac56a800f9c16a1, type: 3}
 --- !u!4 &4246524484456492184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4699015870416612874, guid: c7675d94da8318e46b897fc4d3c3fd70, type: 3}
@@ -771,9 +881,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223591506908451708}
     m_Modifications:
+    - target: {fileID: 123735251442321624, guid: ec33684b5f634bf4496863b857eee2a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2867139833832312530, guid: ec33684b5f634bf4496863b857eee2a2, type: 3}
       propertyPath: m_Name
       value: BackRoomsCeilingLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867139833832312530, guid: ec33684b5f634bf4496863b857eee2a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3207109187658241128, guid: ec33684b5f634bf4496863b857eee2a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -813,6 +931,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3207109187658241128, guid: ec33684b5f634bf4496863b857eee2a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202788265439491143, guid: ec33684b5f634bf4496863b857eee2a2, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
