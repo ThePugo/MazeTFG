@@ -78,7 +78,6 @@ public class MazeRender : MonoBehaviour
         surface.BuildNavMesh();
         Vector3[] patrolPoints = GenerateStrategicPatrolPoints();
         enemy.GetComponent<EnemyAI>().SetPatrolPoints(patrolPoints);
-        Instantiate(enemy, new Vector3((float)randomi * CellSize, 0f, (float)randomj * CellSize), Quaternion.identity);
         PlaceExit();
     }
 
@@ -137,6 +136,7 @@ public class MazeRender : MonoBehaviour
 
         // Seleccionar una esquina aleatoria
         MazeCellObject cellToReplace = corners[Random.Range(0, corners.Length)];
+        Vector3 pos= new Vector3(0,0,0);
 
         // Crear una instancia de la clase Random
         System.Random random = new System.Random();
@@ -146,6 +146,7 @@ public class MazeRender : MonoBehaviour
 
         if (cellToReplace == topLeftCell)
         {
+            pos = topLeftCell.transform.position;
             if (randomNumber == 0)
             {
                 topLeftCell.disableTop();
@@ -161,6 +162,7 @@ public class MazeRender : MonoBehaviour
         }
         else if (cellToReplace == topRightCell)
         {
+            pos = topRightCell.transform.position;
             if (randomNumber == 0)
             {
                 topRightCell.disableTop();
@@ -176,6 +178,7 @@ public class MazeRender : MonoBehaviour
         }
         else if (cellToReplace == bottomRightCell)
         {
+            pos = bottomRightCell.transform.position;
             if (randomNumber == 0)
             {
                 bottomRightCell.disableBottom();
@@ -189,6 +192,7 @@ public class MazeRender : MonoBehaviour
                 exit.transform.SetParent(bottomRightCell.transform, false);
             }
         }
+        Instantiate(enemy, pos, Quaternion.identity);
     }
 
 
