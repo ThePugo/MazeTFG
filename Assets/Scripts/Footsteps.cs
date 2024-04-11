@@ -28,6 +28,8 @@ public class Footsteps : MonoBehaviour
 
     private void Awake()
     {
+        footstepsSound.volume = 0.5f;
+        sprintSound.volume = 0.5f;
         playerController = GetComponent<FirstPersonController>();
         _input = GetComponent<StarterAssetsInputs>();
     }

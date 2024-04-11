@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -128,6 +128,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -179,6 +180,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2119108295}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &5488834 stripped
 Transform:
@@ -203,9 +210,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7774033}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000006, z: -0.000003106892}
 --- !u!1001 &12442667
@@ -213,6 +228,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -264,6 +280,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (62)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 183704316}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &12959107 stripped
 Transform:
@@ -275,6 +297,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -326,12 +349,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 559919208}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &23355602
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -383,12 +413,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (75)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 778968139}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &39551437
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -440,12 +477,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &48096554
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -497,12 +538,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 758781653}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &50777265
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -554,6 +602,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (67)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &59866384 stripped
 Transform:
@@ -583,9 +634,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83493045}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!1 &92868217 stripped
@@ -601,9 +660,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92868217}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000004, z: -0.00000024586916}
 --- !u!1001 &94542996
@@ -611,6 +678,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -662,6 +730,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (68)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &111752287 stripped
 Transform:
@@ -686,9 +757,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115360679}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!1001 &119570887
@@ -696,6 +775,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -747,12 +827,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &137515309
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -804,6 +888,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (47)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &137578933 stripped
 GameObject:
@@ -818,9 +905,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137578933}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999999, z: 0.00000017136335}
 --- !u!1 &140119272 stripped
@@ -841,9 +936,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140119272}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353565, y: 3.0000002, z: 0.18535541}
   m_Center: {x: -0.50000095, y: 1.500001, z: -0.0000002459274}
 --- !u!1001 &141863815
@@ -851,6 +954,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -902,12 +1006,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (55)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1390960806}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &143716797
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -959,6 +1070,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (62)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &149892944 stripped
 Transform:
@@ -983,9 +1097,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164970007}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000011, y: 1.5000004, z: -0.00000024586916}
 --- !u!1001 &166996658
@@ -993,6 +1115,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1044,12 +1167,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (63)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &170226132
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -1101,12 +1228,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2057373015}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &175339082
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -1158,6 +1292,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 814764210}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &183704312 stripped
 GameObject:
@@ -1177,9 +1317,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183704312}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.5000078, y: 1.5000007, z: -0.0000011995435}
 --- !u!1 &194489957 stripped
@@ -1200,9 +1348,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194489957}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!4 &198579188 stripped
@@ -1223,9 +1379,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199696056}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999995, z: -0.000007875264}
 --- !u!4 &202954504 stripped
@@ -1243,6 +1407,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1294,12 +1459,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (78)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &211272291
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -1351,12 +1520,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (56)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1233445044}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &214365163
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1408,6 +1584,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (58)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &219553711 stripped
 Transform:
@@ -1437,9 +1616,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234635007}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.49999917, y: 1.5, z: -0.0000002458694}
 --- !u!1001 &242243467
@@ -1447,6 +1634,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -1498,6 +1686,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 953956320}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &249611726 stripped
 Transform:
@@ -1514,6 +1708,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1565,6 +1760,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (66)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &269615102 stripped
 Transform:
@@ -1586,6 +1784,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1637,6 +1836,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (50)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &285498710 stripped
 GameObject:
@@ -1656,9 +1858,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285498710}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000006, z: -0.000003106892}
 --- !u!1 &288543501 stripped
@@ -1679,9 +1889,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288543501}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.49999917, y: 1.5000006, z: -0.0000011995437}
 --- !u!1001 &292190891
@@ -1689,6 +1907,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1740,6 +1959,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &349979733 stripped
 GameObject:
@@ -1759,9 +1981,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349979733}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999446, y: 1.5000014, z: -0.0000007226481}
 --- !u!1001 &367457308
@@ -1769,6 +1999,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -1820,6 +2051,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 903509814}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &368241289 stripped
 Transform:
@@ -1831,6 +2068,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -1882,6 +2120,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2107807988}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &368929680 stripped
 Transform:
@@ -1893,6 +2137,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -1944,6 +2189,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (72)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &369492024 stripped
 Transform:
@@ -1968,9 +2216,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376005216}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!4 &383127040 stripped
@@ -1983,6 +2239,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2034,12 +2291,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &397756903
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2091,6 +2352,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &401218400 stripped
 GameObject:
@@ -2105,9 +2369,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401218400}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000044, y: 1.5000001, z: -0.00000024586916}
 --- !u!4 &401748524 stripped
@@ -2120,6 +2392,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4958678738205994369, guid: 21c056333e7958c429e4ed3fa45ae69d, type: 3}
@@ -2171,12 +2444,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21c056333e7958c429e4ed3fa45ae69d, type: 3}
 --- !u!1001 &433387426
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2228,6 +2505,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &443554306 stripped
 Transform:
@@ -2252,9 +2532,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448353133}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.4999999, z: 0.00000032037497}
 --- !u!1001 &455719997
@@ -2262,6 +2550,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2313,12 +2602,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &460537595
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2370,12 +2663,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (65)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &468766179
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2427,6 +2724,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &475260318 stripped
 GameObject:
@@ -2441,9 +2741,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475260318}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: -0.0000034943223}
 --- !u!1 &475421358 stripped
@@ -2459,9 +2767,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475421358}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500002, y: 1.5000004, z: -0.00000024586916}
 --- !u!4 &487040956 stripped
@@ -2474,6 +2790,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -2525,6 +2842,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (34)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 591159443}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &490370380 stripped
 Transform:
@@ -2536,6 +2859,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2587,12 +2911,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &495459371
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2644,12 +2972,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (45)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &500805320
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -2701,6 +3033,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (45)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2027219291}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &513972297 stripped
 Transform:
@@ -2712,6 +3050,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -2763,12 +3102,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (79)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1592388329}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &519947313
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2820,12 +3166,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (81)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &525792500
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2877,6 +3227,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &526825290 stripped
 GameObject:
@@ -2896,9 +3249,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526825290}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000001, z: -0.0000002458692}
 --- !u!1001 &540995497
@@ -2906,6 +3267,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -2957,6 +3319,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &546104653 stripped
 Transform:
@@ -2968,6 +3333,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -3019,6 +3385,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1312790556}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &559919204 stripped
 GameObject:
@@ -3038,9 +3410,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559919204}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353565, y: 3.0000002, z: 0.18535541}
   m_Center: {x: -0.5000006, y: 1.5000011, z: -0.0000011996017}
 --- !u!4 &562571081 stripped
@@ -3071,9 +3451,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581482795}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!1 &591159440 stripped
@@ -3089,9 +3477,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591159440}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.49999964, y: 1.4999992, z: 0.0000026151536}
 --- !u!4 &599698478 stripped
@@ -3109,6 +3505,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3160,12 +3557,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (75)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &615868879
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3217,12 +3618,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (61)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &640316835
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3274,6 +3679,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &644317154 stripped
 Transform:
@@ -3321,9 +3729,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -3357,12 +3773,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650574670}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.0879703, y: -0, z: -0, w: 0.99612314}
   m_LocalPosition: {x: 5.15, y: 1.81, z: 1.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 10.094, y: 0, z: 0}
 --- !u!114 &650574674
 MonoBehaviour:
@@ -3434,6 +3851,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3485,6 +3903,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &656394623 stripped
 Transform:
@@ -3504,9 +3925,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665267587}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999995, z: -0.000007875264}
 --- !u!1 &668552479 stripped
@@ -3527,9 +3956,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668552479}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!1 &673605465 stripped
@@ -3545,9 +3982,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673605465}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999999, z: -0.0000005736947}
 --- !u!1 &673970672 stripped
@@ -3568,9 +4013,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673970672}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999255, y: 1.5000014, z: -0.0000016763224}
 --- !u!1001 &675837638
@@ -3578,6 +4031,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3629,12 +4083,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (77)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &677445145
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3686,6 +4144,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (55)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &689138412 stripped
 Transform:
@@ -3697,6 +4158,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3748,12 +4210,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (56)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &702820495
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3805,12 +4271,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &708588477
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -3862,6 +4332,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (74)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198709743}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &708647810 stripped
 Transform:
@@ -3873,6 +4349,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3924,12 +4401,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &734792525
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -3981,6 +4462,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (74)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &756686510 stripped
 Transform:
@@ -3992,6 +4476,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4043,6 +4528,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (31)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2126316684}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &758781649 stripped
 GameObject:
@@ -4062,9 +4553,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758781649}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.5000021, y: 1.5000007, z: -0.0000011995435}
 --- !u!4 &761112900 stripped
@@ -4077,6 +4576,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4128,6 +4628,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (66)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 115360681}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &765569011 stripped
 Transform:
@@ -4144,6 +4650,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -4195,6 +4702,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (76)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &778968137 stripped
 GameObject:
@@ -4214,9 +4724,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778968137}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!1001 &782362198
@@ -4224,6 +4742,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -4275,6 +4794,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &795166311 stripped
 Transform:
@@ -4286,6 +4808,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4337,6 +4860,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (67)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 194489959}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &803866144 stripped
 Transform:
@@ -4366,9 +4895,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814764207}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: -0.0000034943223}
 --- !u!1001 &816363853
@@ -4376,6 +4913,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -4427,6 +4965,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &818397864 stripped
 Transform:
@@ -4448,6 +4989,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4499,6 +5041,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1240072583}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &836516422 stripped
 Transform:
@@ -4518,9 +5066,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846042473}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.49999988, y: 1.5000004, z: -0.0000040605664}
 --- !u!4 &852085794 stripped
@@ -4538,6 +5094,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -4589,6 +5146,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (34)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &861846838 stripped
 Transform:
@@ -4605,6 +5165,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4656,12 +5217,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910890262}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &868659826
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -4713,12 +5281,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &871936558
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4770,12 +5342,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 448353136}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &872677805
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -4827,6 +5406,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (69)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &873361439 stripped
 Transform:
@@ -4856,9 +5438,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877283372}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.21, y: -35.61952, z: 102.96}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 111752287}
   - {fileID: 562571081}
@@ -4941,13 +5525,13 @@ Transform:
   - {fileID: 1062001773}
   - {fileID: 1592388328}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &882924010
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -4999,12 +5583,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1032614019}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &901662036
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5056,6 +5647,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (54)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &902525822
 GameObject:
@@ -5080,9 +5674,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902525822}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.98, y: -38.454, z: 109.76731}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820667043}
   - {fileID: 1960430143}
@@ -5173,7 +5769,6 @@ Transform:
   - {fileID: 202954504}
   - {fileID: 1749440900}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903509811 stripped
 GameObject:
@@ -5188,9 +5783,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903509811}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: -0.0000034943223}
 --- !u!1 &910890259 stripped
@@ -5206,9 +5809,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910890259}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.50000346, y: 1.4999999, z: -0.000000007450581}
 --- !u!4 &915516405 stripped
@@ -5221,6 +5832,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -5272,6 +5884,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712700538}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &940766454 stripped
 GameObject:
@@ -5286,9 +5904,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940766454}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500002, y: 1.5000004, z: -0.00000024586916}
 --- !u!1001 &946340069
@@ -5296,6 +5922,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5347,6 +5974,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (70)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &953956317 stripped
 GameObject:
@@ -5361,9 +5991,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953956317}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.5, z: -0.0000034943223}
 --- !u!4 &957511058 stripped
@@ -5381,6 +6019,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -5432,12 +6071,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (78)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1062001774}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &968470117
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5489,12 +6135,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (64)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &970928269
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5546,12 +6196,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &980475750
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -5603,12 +6257,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (46)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 234635011}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &988720427
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5660,6 +6321,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (87)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &989471087 stripped
 GameObject:
@@ -5679,9 +6343,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989471087}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500002, y: 1.5000014, z: -0.000007875264}
 --- !u!4 &1001103459 stripped
@@ -5694,6 +6366,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5745,12 +6418,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1006193895
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5802,12 +6479,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1006904683
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -5859,6 +6540,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (71)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1010232000 stripped
 Transform:
@@ -5870,6 +6554,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -5921,6 +6606,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (59)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 526825294}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1031385681 stripped
 Transform:
@@ -5945,9 +6636,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032614016}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.4999995, z: -0.000007875264}
 --- !u!1001 &1034479290
@@ -5955,6 +6654,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6006,6 +6706,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1157475763}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1034479291 stripped
 Transform:
@@ -6022,6 +6728,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -6073,6 +6780,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1062001772 stripped
 GameObject:
@@ -6092,9 +6802,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062001772}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: 0.0000016614792}
 --- !u!1001 &1062041608
@@ -6102,6 +6820,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6153,12 +6872,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (64)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 349979737}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1068278182
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -6210,12 +6936,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1069082853
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6267,12 +6997,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 665267590}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1070347824
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6324,55 +7061,13 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 846042476}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
---- !u!1 &1072102210
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1072102212}
-  - component: {fileID: 1072102211}
-  m_Layer: 8
-  m_Name: PPP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1072102211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072102210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: a09761bf51d5e0849bb4c1a7acbc650c, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
---- !u!4 &1072102212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072102210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.852179, y: 0.8670387, z: 6.9637184}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074873557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6386,9 +7081,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074873557}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.49999917, y: 1.4999999, z: 0.00000008195639}
 --- !u!1 &1086728849 stripped
@@ -6409,9 +7112,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086728849}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000006, z: 0.00000070780493}
 --- !u!1001 &1087048703
@@ -6419,6 +7130,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6470,12 +7182,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1627378155}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1102229400
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -6527,12 +7246,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (59)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1107906208
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -6584,6 +7307,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (60)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1113600000 stripped
 Transform:
@@ -6608,9 +7334,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132104306}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: 0.0000016614792}
 --- !u!1 &1133635706 stripped
@@ -6631,9 +7365,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133635706}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999925, y: 1.5000013, z: -0.00000024586916}
 --- !u!1001 &1134738826
@@ -6641,6 +7383,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6692,6 +7435,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (61)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1512575249}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1137944060 stripped
 Transform:
@@ -6703,6 +7452,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6754,6 +7504,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 137578936}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &1147127299 stripped
 GameObject:
@@ -6773,9 +7529,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147127299}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999827, y: 1.5000007, z: 0.0000016614795}
 --- !u!1 &1157475760 stripped
@@ -6791,9 +7555,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157475760}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.50000536, y: 1.5000001, z: -0.0000011995435}
 --- !u!1001 &1158710463
@@ -6801,6 +7573,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6852,12 +7625,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (58)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 989471091}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1160592682
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6909,6 +7689,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 475421361}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1161880207 stripped
 Transform:
@@ -6920,6 +7706,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -6971,12 +7758,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 475260321}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1197091342
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -7028,6 +7822,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 92868220}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &1198709741 stripped
 GameObject:
@@ -7047,9 +7847,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198709741}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!4 &1199866315 stripped
@@ -7075,9 +7883,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200090596}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.50000304, y: 1.5000014, z: -0.0000002458692}
 --- !u!1001 &1206687107
@@ -7085,6 +7901,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7136,6 +7953,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (44)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1209960644 stripped
 Transform:
@@ -7155,9 +7975,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209976635}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.4999995, z: -0.000007875264}
 --- !u!1001 &1211236842
@@ -7165,6 +7993,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -7216,6 +8045,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (69)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200090598}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &1226164302 stripped
 GameObject:
@@ -7235,9 +8070,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226164302}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!1001 &1226586733
@@ -7245,6 +8088,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -7296,6 +8140,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1074873560}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &1233445040 stripped
 GameObject:
@@ -7315,9 +8165,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233445040}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.500004, y: 1.5000007, z: -0.00000024586916}
 --- !u!1001 &1235850314
@@ -7325,6 +8183,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7376,6 +8235,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (31)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1240072580 stripped
 GameObject:
@@ -7390,9 +8252,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240072580}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500003, y: 1.5000006, z: -0.00000024586916}
 --- !u!1 &1242391242 stripped
@@ -7408,9 +8278,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242391242}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.50000226, y: 1.4999999, z: -0.0000008121133}
 --- !u!1001 &1255689516
@@ -7418,6 +8296,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7469,12 +8348,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1257076041
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -7526,12 +8409,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 199696059}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1261854246
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7583,6 +8473,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (82)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1271879355 stripped
 Transform:
@@ -7617,9 +8510,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302537958}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999255, y: 1.5000014, z: -0.0000011994853}
 --- !u!1 &1306534342 stripped
@@ -7635,9 +8536,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306534342}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.4999995, z: -0.000007875264}
 --- !u!1 &1312790552 stripped
@@ -7658,9 +8567,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312790552}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.4999897, y: 1.5000014, z: -0.0000011994853}
 --- !u!4 &1319030810 stripped
@@ -7688,6 +8605,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7739,12 +8657,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1340430971
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -7796,12 +8718,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 673970676}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1341483948
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7853,6 +8782,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (53)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1342958562 stripped
 GameObject:
@@ -7867,9 +8799,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342958562}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000011, y: 1.4999995, z: -0.000007875264}
 --- !u!1001 &1351500759
@@ -7877,6 +8817,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -7928,6 +8869,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1342958565}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1376913661 stripped
 Transform:
@@ -7944,6 +8891,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -7995,6 +8943,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1390960802 stripped
 GameObject:
@@ -8014,9 +8965,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390960802}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500002, y: 1.5000014, z: -0.0000059679146}
 --- !u!4 &1392147848 stripped
@@ -8029,6 +8988,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8080,12 +9040,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1420609932
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8137,12 +9101,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (72)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1579421706}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1430062209
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8194,6 +9165,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1431200526 stripped
 Transform:
@@ -8210,6 +9184,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8261,12 +9236,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 940766457}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1437580570
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8318,6 +9300,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1452885718 stripped
 Transform:
@@ -8329,6 +9314,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8380,12 +9366,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1902656138}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1458263052
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8437,12 +9430,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (57)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1992452316}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1458425539
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8494,12 +9494,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (73)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1226164304}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1466656363
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8551,6 +9558,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1469179343 stripped
 GameObject:
@@ -8565,9 +9575,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469179343}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.5000004, z: -0.00000024586916}
 --- !u!4 &1474302332 stripped
@@ -8585,6 +9603,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8636,6 +9655,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 581482798}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1491650959 stripped
 Transform:
@@ -8647,6 +9672,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8698,12 +9724,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1086728853}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1504986545
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8755,6 +9788,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1506413027 stripped
 Transform:
@@ -8779,9 +9815,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509474128}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000006, y: 1.5, z: -0.0000034943223}
 --- !u!1 &1512575245 stripped
@@ -8802,9 +9846,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512575245}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.5, z: -0.00000024586552}
 --- !u!4 &1516954893 stripped
@@ -8817,6 +9869,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -8868,6 +9921,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (60)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1820313870}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1523106620 stripped
 Transform:
@@ -8884,6 +9943,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8935,12 +9995,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1534540341
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -8992,12 +10056,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (52)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1549522244
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9049,12 +10117,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (51)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1685213599}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1551303238
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9106,6 +10181,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (52)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 285498714}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1553886054 stripped
 Transform:
@@ -9117,6 +10198,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9168,12 +10250,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (51)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1559087252
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9225,12 +10311,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (53)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7774037}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1562801684
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9282,6 +10375,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1568182628 stripped
 Transform:
@@ -9311,9 +10407,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576553918}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.50000304, y: 1.5000014, z: -0.0000002458692}
 --- !u!1 &1579421704 stripped
@@ -9334,9 +10438,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579421704}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.50000304, y: 1.5000014, z: -0.0000002458692}
 --- !u!1001 &1583024776
@@ -9344,6 +10456,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9395,6 +10508,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2113615189}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1583024777 stripped
 Transform:
@@ -9411,6 +10530,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9462,6 +10582,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (57)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1592388327 stripped
 GameObject:
@@ -9481,9 +10604,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592388327}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.5000078, y: 1.5000007, z: -0.0000011995435}
 --- !u!1001 &1613935928
@@ -9491,6 +10622,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9542,6 +10674,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (76)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1147127301}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1614358733 stripped
 Transform:
@@ -9561,9 +10699,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627378152}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: -0.0000034943223}
 --- !u!1001 &1629111659
@@ -9571,6 +10717,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9622,12 +10769,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (85)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1631734152
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9679,6 +10830,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164970010}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1643833085 stripped
 Transform:
@@ -9690,6 +10847,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9741,12 +10899,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1658667770
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9798,12 +10960,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (79)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1672746684
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -9855,12 +11021,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (46)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1677698423
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -9912,6 +11082,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1242391245}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1681891253 stripped
 Transform:
@@ -9936,9 +11112,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685213595}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.000003106892}
 --- !u!4 &1687229674 stripped
@@ -9951,6 +11135,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -10002,6 +11187,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1690509622
 GameObject:
@@ -10029,7 +11217,16 @@ TerrainCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690509622}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 54dd604c01ff25b458c77604801f7877, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1690509624
@@ -10041,7 +11238,7 @@ Terrain:
   m_GameObject: {fileID: 1690509622}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 54dd604c01ff25b458c77604801f7877, type: 2}
+  m_TerrainData: {fileID: 0}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -10055,16 +11252,22 @@ Terrain:
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
   m_ScaleInLightmap: 0.0256
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
 --- !u!4 &1690509625
 Transform:
   m_ObjectHideFlags: 0
@@ -10072,18 +11275,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690509622}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1692530442
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10135,12 +11340,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (77)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 83493047}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1700773601
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -10192,6 +11404,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1712700535 stripped
 GameObject:
@@ -10206,9 +11421,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712700535}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.50000036, y: 1.4999995, z: -0.000007875264}
 --- !u!1001 &1720374972
@@ -10216,6 +11439,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -10267,6 +11491,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1729182212 stripped
 Transform:
@@ -10291,9 +11518,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745252156}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999999, z: -0.0000006631017}
 --- !u!4 &1749440900 stripped
@@ -10321,6 +11556,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10372,12 +11608,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (68)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1854896939}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1766416884
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -10429,12 +11672,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (73)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1779523969
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10486,6 +11733,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (70)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 668552481}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1789212048 stripped
 Transform:
@@ -10502,6 +11755,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10553,12 +11807,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (63)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 140119276}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1809870452
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10610,12 +11871,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (54)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1815021530}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1812193347
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10667,6 +11935,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (48)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1984906843}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &1813909576 stripped
 GameObject:
@@ -10681,9 +11955,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813909576}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999995, z: -0.000007875264}
 --- !u!1 &1815021526 stripped
@@ -10704,9 +11986,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815021526}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.49999607, y: 1.5, z: -0.00000024586916}
 --- !u!1 &1820313866 stripped
@@ -10727,9 +12017,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820313866}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500002, y: 1.5000008, z: -0.00001359731}
 --- !u!4 &1820667043 stripped
@@ -10742,6 +12040,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -10793,12 +12092,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (86)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1847673616
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10850,12 +12153,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1813909579}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1850441278
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -10907,6 +12217,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (50)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1576553922}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &1854896937 stripped
 GameObject:
@@ -10926,9 +12242,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854896937}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.50000304, y: 1.5000014, z: -0.0000002458692}
 --- !u!4 &1867274630 stripped
@@ -10951,6 +12275,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -11002,6 +12327,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1902656135 stripped
 GameObject:
@@ -11016,9 +12344,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902656135}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000011, y: 1.5000004, z: -0.0000040605664}
 --- !u!1001 &1907259124
@@ -11026,6 +12362,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11077,6 +12414,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1509474131}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1914329012 stripped
 Transform:
@@ -11088,6 +12431,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11139,6 +12483,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (71)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 376005218}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1918409012 stripped
 Transform:
@@ -11155,6 +12505,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11206,6 +12557,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401218403}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1941312465 stripped
 Transform:
@@ -11217,6 +12574,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11268,12 +12626,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 288543505}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1946569895
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11325,12 +12690,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1132104310}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1958366844
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -11382,12 +12754,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &1960231115
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11439,6 +12815,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1745252159}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &1960430143 stripped
 Transform:
@@ -11450,6 +12832,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -11501,6 +12884,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (84)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &1980544613 stripped
 Transform:
@@ -11512,6 +12898,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11563,12 +12950,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1469179346}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1982964756
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -11620,6 +13014,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1984906839 stripped
 GameObject:
@@ -11639,9 +13036,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984906839}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.4999994, z: -0.0000040605664}
 --- !u!1001 &1984928953
@@ -11649,6 +13054,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11700,12 +13106,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (47)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1133635710}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &1992213055
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -11757,6 +13170,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &1992452312 stripped
 GameObject:
@@ -11776,9 +13192,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992452312}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999827, y: 1.5000007, z: 0.0000016614795}
 --- !u!1001 &1998864457
@@ -11786,6 +13210,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -11837,6 +13262,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (48)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!4 &2004513768 stripped
 Transform:
@@ -11861,9 +13289,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017053325}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999636, y: 1.5, z: -0.0000007227063}
 --- !u!1 &2027219287 stripped
@@ -11884,9 +13320,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027219287}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.035356, y: 3.0000002, z: 0.18535538}
   m_Center: {x: -0.49999446, y: 1.5, z: -0.0000007227063}
 --- !u!4 &2031775065 stripped
@@ -11909,6 +13353,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -11960,6 +13405,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (44)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017053329}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &2043637682 stripped
 Transform:
@@ -11971,6 +13422,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -12022,12 +13474,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (65)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1302537962}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &2052665269
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -12079,12 +13538,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (80)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &2054185851
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -12136,6 +13599,12 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1209976638}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1 &2057373012 stripped
 GameObject:
@@ -12150,9 +13619,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057373012}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5, z: -0.0000034943223}
 --- !u!4 &2061777110 stripped
@@ -12170,6 +13647,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -12221,12 +13699,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &2077367248
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -12278,12 +13760,16 @@ PrefabInstance:
       value: BackRoomsCeilingPack (83)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1001 &2081261469
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -12335,12 +13821,19 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1306534345}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!1001 &2085421007
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 902525823}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
@@ -12392,6 +13885,9 @@ PrefabInstance:
       value: BackRoomsCeilingPack (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
 --- !u!1 &2107807985 stripped
 GameObject:
@@ -12406,9 +13902,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107807985}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.500002, y: 1.5000004, z: -0.00000024586916}
 --- !u!1 &2113615186 stripped
@@ -12424,9 +13928,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113615186}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.5000001, y: 1.5000013, z: -0.0000040605664}
 --- !u!1 &2119108292 stripped
@@ -12442,9 +13954,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119108292}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999982, y: 1.5, z: -0.0000034943223}
 --- !u!1 &2126316681 stripped
@@ -12460,9 +13980,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126316681}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 4.0353556, y: 3.0000002, z: 0.18535537}
   m_Center: {x: -0.4999963, y: 1.4999999, z: 0.000000230968}
 --- !u!4 &2126936330 stripped
@@ -12475,6 +14003,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 877283373}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
@@ -12526,9 +14055,82 @@ PrefabInstance:
       value: BackRoomsWall01Straigh01 (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 673605468}
   m_SourcePrefab: {fileID: 100100000, guid: afd6ca4d6d4c52f438c86df4bcc82453, type: 3}
 --- !u!4 &2146137902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ade5aa4beda237349bbaeafdef935605, type: 3}
   m_PrefabInstance: {fileID: 1466656363}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1289309216873251201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.852179
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8670387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.9637184
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883086237562394680, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855051970824635740, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+      propertyPath: m_Name
+      value: PPP
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4bc59b55f1dbc71498477fcbcb1f0cac, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1690509625}
+  - {fileID: 877283373}
+  - {fileID: 902525823}
+  - {fileID: 1289309216873251201}
+  - {fileID: 650574673}
+  - {fileID: 413807413}

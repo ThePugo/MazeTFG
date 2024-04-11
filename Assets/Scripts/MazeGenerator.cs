@@ -6,6 +6,7 @@ using static UnityEngine.UI.GridLayoutGroup;
 using UnityEngine.Rendering.VirtualTexturing;
 using System.Text;
 using System.Linq;
+using TMPro;
 
 public class MazeGenerator : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class MazeGenerator : MonoBehaviour
     public int mazeWidth= 20, mazeHeight = 20; //dimensiones
     private int startX, startY; //posición de inicio del algoritmo
     MazeCell[,] maze; //mapa del laberinto
+    public TMP_Dropdown widthDropdown;
+    public TMP_Dropdown heightDropdown;
 
     private Vector2Int startCorner;
     private List<Direction> biasDirections;
@@ -37,6 +40,8 @@ public class MazeGenerator : MonoBehaviour
 
     public MazeCell[,] GetMaze()
     {
+        mazeWidth = PlayerPrefs.GetInt("MazeWidth", mazeWidth);
+        mazeHeight = PlayerPrefs.GetInt("MazeHeight", mazeHeight);
         maze = new MazeCell[mazeWidth, mazeHeight];
 
         for (int i = 0; i < mazeWidth; i++)

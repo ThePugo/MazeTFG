@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -11,22 +13,25 @@ public class EnemyAI : MonoBehaviour
         Chase,
         Attack
     }
-
     [SerializeField] private Vector3[] patrolPoints;
     private int currentPatrolIndex;
     private NavMeshAgent agent;
     private Transform player;
+    public GameObject axe;
+    private BoxCollider axeCollider;
     public State currentState;
     private bool isAttacking = false;
     public float attackDelay = 1.5f;
     private float viewDistance = 10f;
     private float viewAngle = 60f;
+    public Animator animator;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player").transform;
         currentState = State.Patrol;
+        axeCollider = axe.GetComponent<BoxCollider>();
     }
 
     private void Update()
@@ -34,12 +39,21 @@ public class EnemyAI : MonoBehaviour
         switch (currentState)
         {
             case State.Patrol:
+                animator.SetBool("Patrol",true);
+                animator.SetBool("Chase", false);
+                animator.SetBool("Attack", false);
                 Patrol();
                 break;
             case State.Chase:
+                animator.SetBool("Patrol", false);
+                animator.SetBool("Chase", true);
+                animator.SetBool("Attack", false);
                 Chase();
                 break;
             case State.Attack:
+                animator.SetBool("Patrol", false);
+                animator.SetBool("Chase", false);
+                animator.SetBool("Attack", true);
                 if (!isAttacking)
                 {
                     StartCoroutine(Attack());
@@ -50,7 +64,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Patrol()
     {
-        print("Patrol");
+        agent.speed = 4;
         if (agent.destination != patrolPoints[currentPatrolIndex])
         {
             agent.destination = patrolPoints[currentPatrolIndex];
@@ -85,12 +99,12 @@ public class EnemyAI : MonoBehaviour
             //el enemigo tiene un rango de audición básico para oír al jugador caminando
             if (playerFootsteps.footstepsSound.enabled)
             {
-                hearingRange = viewDistance;
+                hearingRange = viewDistance-5;
             }
             //el rango de audición se extiende si el jugador está corriendo
             else if (playerFootsteps.sprintSound.enabled)
             {
-                hearingRange = viewDistance + 10f;
+                hearingRange = viewDistance;
             }
             else
             {
@@ -135,19 +149,19 @@ public class EnemyAI : MonoBehaviour
 
     private void Chase()
     {
-        print("Chase");
         LookAtPlayer();
+        agent.speed = 6;
         agent.destination = player.position;
 
         //condición para cambiar al estado Attack
         if (Vector3.Distance(player.position, transform.position) < 2f)
         {
-            agent.destination = agent.destination;
+            agent.isStopped = true;
             currentState = State.Attack;
         }
 
         //condición para volver a Patrol si el jugador se aleja demasiado y sale del campo de visión
-        if (!IsPlayerInSight() && Vector3.Distance(player.position, transform.position) > 15f)
+        if (!IsPlayerInSight() && Vector3.Distance(player.position, transform.position) > 10f)
         {
             currentState = State.Patrol;
         }
@@ -167,35 +181,38 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator Attack()
     {
-        print("Attack");
+        LookAtPlayer();
         isAttacking = true;
+        animator.SetTrigger("Attack");
 
-        // Aquí puedes agregar animaciones de ataque o efectos de sonido
-        Debug.Log("Attacking player");
+        // Espera un tiempo específico antes de activar el collider, ajusta este tiempo para sincronizar con tu animación
+        float activationDelay = attackDelay * 0.4f; // Ajusta este factor para activar el collider antes en la animación
+        yield return new WaitForSeconds(activationDelay);
+        axeCollider.enabled = true;
 
-        //espera por el tiempo de delay antes del próximo ataque
-        yield return new WaitForSeconds(attackDelay);
+        // Espera el tiempo restante de la animación antes de continuar
+        yield return new WaitForSeconds(attackDelay - activationDelay);
+        axeCollider.enabled = false; // Desactiva el collider después de completar el ataque
 
-        //comprueba si el jugador aún está en rango de ataque después de esperar
+        // Restablece el estado
+        isAttacking = false;
         if (Vector3.Distance(player.position, transform.position) > 2f)
         {
-            //si el jugador se ha alejado, vuelve al estado Chase
+            agent.isStopped = false;
             currentState = State.Chase;
         }
-
-        isAttacking = false;
-
     }
+
 
     public void SetPatrolPoints(Vector3[] newPatrolPoints)
     {
         patrolPoints = newPatrolPoints;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         // Comprueba si el objeto con el que colisionó es el jugador
-        if (collision.gameObject.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             SceneManager.LoadScene("GameOver");
             Cursor.visible = true;
