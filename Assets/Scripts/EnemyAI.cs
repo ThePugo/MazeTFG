@@ -150,11 +150,7 @@ public class EnemyAI : MonoBehaviour
     private void Chase()
     {
         LookAtPlayer();
-<<<<<<< HEAD
         agent.speed = 6;
-=======
-        agent.speed = 5;
->>>>>>> 99f4bf326fc5e7b8e4e196ac5ce6920eeed012a6
         agent.destination = player.position;
 
         //condición para cambiar al estado Attack
