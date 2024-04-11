@@ -131,9 +131,6 @@ public class EnemyAI : MonoBehaviour
         // Calcular la dirección exacta desde el enemigo hacia el jugador
         Vector3 directionToPlayer = (player.position - rayStart).normalized;
 
-        // Dibuja un rayo en la ventana de Scene para visualizar el raycast
-        Debug.DrawRay(rayStart, directionToPlayer * viewDistance, Color.red);
-
         // Asegúrate de que el raycast no pase a través de las paredes
         int layerMask = 1 << LayerMask.NameToLayer("Wall");  // Reemplaza "Wall" con la capa de tus paredes
         layerMask = ~layerMask;  // Invierte la máscara para incluir todas las capas excepto las paredes
