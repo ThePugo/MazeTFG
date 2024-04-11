@@ -21,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     private BoxCollider axeCollider;
     public State currentState;
     private bool isAttacking = false;
+    private int eyeHeight = 2;
     public float attackDelay = 1.5f;
     private float viewDistance = 10f;
     private float viewAngle = 60f;
@@ -124,28 +125,36 @@ public class EnemyAI : MonoBehaviour
 
     private bool IsPlayerInSight()
     {
-        //dirección del enemigo al jugador
-        Vector3 directionToPlayer = player.position - transform.position;
-        //ángulo entre el frente del enemigo y la dirección al jugador
-        float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
+        // Ajuste la altura de inicio del rayo a la altura de los ojos del enemigo
+        Vector3 rayStart = transform.position + Vector3.up * 2.0f;  // eyeHeight es 2
 
-        //si el jugador está dentro del ángulo de visión y a la distancia de visión, entonces el jugador está a la vista
-        if (angleToPlayer < viewAngle / 2 && directionToPlayer.magnitude <= viewDistance)
+        // Calcular la dirección exacta desde el enemigo hacia el jugador
+        Vector3 directionToPlayer = (player.position - rayStart).normalized;
+
+        // Dibuja un rayo en la ventana de Scene para visualizar el raycast
+        Debug.DrawRay(rayStart, directionToPlayer * viewDistance, Color.red);
+
+        // Asegúrate de que el raycast no pase a través de las paredes
+        int layerMask = 1 << LayerMask.NameToLayer("Wall");  // Reemplaza "Wall" con la capa de tus paredes
+        layerMask = ~layerMask;  // Invierte la máscara para incluir todas las capas excepto las paredes
+
+        // Comprobación para detectar al jugador en medio
+        RaycastHit hit;
+        if (Physics.Raycast(rayStart, directionToPlayer, out hit, viewDistance, layerMask))
         {
-            //comprobación adicional para asegurarse de que no hay obstáculos en medio
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, directionToPlayer.normalized, out hit, viewDistance))
+            // Comprueba si el raycast golpeó al jugador
+            if (hit.transform.CompareTag("Player"))
             {
-                //comprueba si el raycast golpeó al jugador
-                if (hit.transform == player)
-                {
-                    return true;
-                }
+                return true;
             }
         }
 
         return false;
     }
+
+
+
+
 
     private void Chase()
     {
