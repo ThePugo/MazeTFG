@@ -6,6 +6,7 @@ public class KeyInteract : MonoBehaviour, IInteractable
 {
     public AudioSource src;
     [SerializeField] GameObject keyObject;
+    [SerializeField] GameObject minimapObject;
     public void Interact()
     {
         if (keyObject.GetComponent<Renderer>().enabled == true)
@@ -14,6 +15,7 @@ public class KeyInteract : MonoBehaviour, IInteractable
             src.Play();
             keyObject.GetComponent<Renderer>().enabled = false;
             keyObject.GetComponent<BoxCollider>().enabled = false;
+            minimapObject.SetActive(false);
             // Emitir el evento de que la llave ha sido recogida.
             EventManager.KeyCollected();
         } 

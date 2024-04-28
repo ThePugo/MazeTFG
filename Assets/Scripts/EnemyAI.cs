@@ -21,10 +21,8 @@ public class EnemyAI : MonoBehaviour
     private BoxCollider axeCollider;
     public State currentState;
     private bool isAttacking = false;
-    private int eyeHeight = 2;
     public float attackDelay = 1.5f;
     private float viewDistance = 10f;
-    private float viewAngle = 60f;
     public Animator animator;
 
     private void Start()
