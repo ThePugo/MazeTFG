@@ -264,7 +264,10 @@ public class EnemyAI : MonoBehaviour
         // Comprueba si el objeto con el que colisionó es el jugador
         if (collision.CompareTag("Player"))
         {
-            WaitAndLoadMainMenu();
+            if (!Footsteps.godMode)
+            {
+                WaitAndLoadMainMenu();
+            }
         }
     }
 

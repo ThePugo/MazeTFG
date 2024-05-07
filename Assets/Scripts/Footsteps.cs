@@ -1,10 +1,12 @@
 using StarterAssets;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Footsteps : MonoBehaviour
 {
     public AudioSource footstepsSound, sprintSound, pantingSound;
+    public TMP_Text godModeText;
     [Header("Stamina Main")]
     public float stamina = 100.0f;
     [SerializeField] private float maxStamina = 100.0f;
@@ -26,6 +28,8 @@ public class Footsteps : MonoBehaviour
     private FirstPersonController playerController;
     private StarterAssetsInputs _input;
 
+    public static bool godMode=false;
+
     private void Awake()
     {
         footstepsSound.volume = 0.5f;
@@ -45,11 +49,27 @@ public class Footsteps : MonoBehaviour
 
         if (sprinting && !isDrained)
         {
-            StaminaDrain();
+            if (!godMode)
+            {
+                StaminaDrain();
+            }
         }
         else if (!sprinting)
         {
             StaminaRegain();
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if (!godMode)
+            {
+                godMode = true;
+                godModeText.enabled = true;
+            }
+            else
+            {
+                godMode = false;
+                godModeText.enabled = false;
+            }
         }
     }
 
