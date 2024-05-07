@@ -45,64 +45,70 @@ public class MainMenu : MonoBehaviour
     public void OnBinaryTreeButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.BinaryTree;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnRecursiveBacktrackingButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.RecursiveBacktracking;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
     public void OnKruskalButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Kruskal;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnPrimButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Prim;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnAldousBroderButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.AldousBroder;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnGrowingTreeButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.GrowingTree;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
     public void OnHuntAndKillButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.HuntAndKill;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnWilsonButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Wilson;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnRecursiveDivisionButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.RecursiveDivision;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnSidewinderButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Sidewinder;
-        SceneManager.LoadScene("escena");
+        LoadMaze();
     }
 
     public void OnEllerButtonPressed()
     {
         MazeGenerator.SelectedAlgorithm = MazeGenerator.MazeAlgorithm.Eller;
+        LoadMaze();
+    }
+
+    private void LoadMaze()
+    {
+        GameTimer.instance.StartTimer();
         SceneManager.LoadScene("escena");
     }
 }

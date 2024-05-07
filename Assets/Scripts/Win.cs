@@ -9,6 +9,7 @@ public class Win : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            GameTimer.instance.StopTimer();
             UnityEngine.SceneManagement.SceneManager.LoadScene("VictoryScreen");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;

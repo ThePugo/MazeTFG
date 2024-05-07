@@ -1,1 +1,1 @@
-En "releases" hay un zip para Windows y otro para macOS
+En "releases" hay un zip para Windows con el .exe

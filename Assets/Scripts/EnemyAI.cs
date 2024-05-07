@@ -14,6 +14,12 @@ public class EnemyAI : MonoBehaviour
         Attack
     }
     [SerializeField] private Vector3[] patrolPoints;
+    public AudioSource[] attackSounds; //impale1,2,3, agro1, agro3
+    public AudioSource[] chaseSounds; //agro2, growl scream short 1, growl scream short 2
+    public AudioSource[] patrolSounds; //growl scream long 1, growl scream long 2, idle1, idle2
+    public float minPatrolSoundInterval = 10f;
+    public float maxPatrolSoundInterval = 20f;
+    private float nextPatrolSoundTime = 0f;
     private int currentPatrolIndex;
     private NavMeshAgent agent;
     private Transform player;
@@ -61,9 +67,51 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    // Método para reproducir un sonido aleatorio de patrulla
+    private void PlayRandomPatrolSound()
+    {
+        if (patrolSounds.Length > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, patrolSounds.Length);
+            patrolSounds[randomIndex].Play();
+        }
+    }
+
+    // Método para reproducir un sonido aleatorio de persecución
+    private void PlayRandomChaseSound()
+    {
+        if (chaseSounds.Length > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, chaseSounds.Length);
+            chaseSounds[randomIndex].Play();
+        }
+    }
+
+    // Método para reproducir un sonido aleatorio de ataque
+    private void PlayRandomAttackSound()
+    {
+        if (attackSounds.Length >= 5)
+        {
+            int randomIndex1 = UnityEngine.Random.Range(0, 3); // Para seleccionar un sonido aleatorio de los primeros 3
+            int randomIndex2 = UnityEngine.Random.Range(3, 5); // Para seleccionar un sonido aleatorio de los últimos 2
+
+            AudioSource attackSound1 = attackSounds[randomIndex1];
+            AudioSource attackSound2 = attackSounds[randomIndex2];
+
+            // Reproducir ambos sonidos simultáneamente
+            attackSound1.Play();
+            attackSound2.Play();
+        }
+    }
+
     private void Patrol()
     {
         agent.speed = 4;
+        if (Time.time > nextPatrolSoundTime)
+        {
+            PlayRandomPatrolSound();
+            nextPatrolSoundTime = Time.time + UnityEngine.Random.Range(minPatrolSoundInterval, maxPatrolSoundInterval);
+        }
         if (agent.destination != patrolPoints[currentPatrolIndex])
         {
             agent.destination = patrolPoints[currentPatrolIndex];
@@ -148,9 +196,6 @@ public class EnemyAI : MonoBehaviour
     }
 
 
-
-
-
     private void Chase()
     {
         LookAtPlayer();
@@ -186,6 +231,7 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator Attack()
     {
         LookAtPlayer();
+        PlayRandomAttackSound();
         isAttacking = true;
         animator.SetTrigger("Attack");
 
@@ -218,10 +264,16 @@ public class EnemyAI : MonoBehaviour
         // Comprueba si el objeto con el que colisionó es el jugador
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene("GameOver");
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            WaitAndLoadMainMenu();
         }
+    }
+
+    private void WaitAndLoadMainMenu()
+    {
+        GameTimer.instance.StopTimer();
+        SceneManager.LoadScene("GameOver");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
 
