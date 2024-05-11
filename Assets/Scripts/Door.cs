@@ -32,13 +32,13 @@ public class Door : MonoBehaviour
         {
             if (openTrigger && hasKey)
             {
-                animator.Play("open", 0, 0.0f);
+                animator.SetBool("isOpen", true);
                 open.Play();
                 gameObject.SetActive(false);
             }
             else if (closeTrigger)
             {
-                animator.Play("closed", 0, 0.0f);
+                animator.SetBool("isOpen", false);
                 close.Play();
                 gameObject.SetActive(false);
             }
