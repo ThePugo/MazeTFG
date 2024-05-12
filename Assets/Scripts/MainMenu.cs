@@ -111,4 +111,9 @@ public class MainMenu : MonoBehaviour
         GameTimer.instance.StartTimer();
         SceneManager.LoadScene("escena");
     }
+
+    public void OnQuitButtonPressed()
+    {
+        Application.Quit();
+    }
 }
