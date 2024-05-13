@@ -25,6 +25,8 @@ public class MazeRender : MonoBehaviour
     {
         Cursor.visible = false;
         MazeCell[,] maze = mazeGenerator.GetMaze();
+        WinMenu.mazeHeight = mazeGenerator.mazeHeight;
+        WinMenu.mazeWidth = mazeGenerator.mazeWidth;
         System.Random random = new System.Random();
         int randomi = random.Next(mazeGenerator.mazeWidth);
         int randomj = random.Next(mazeGenerator.mazeHeight);
