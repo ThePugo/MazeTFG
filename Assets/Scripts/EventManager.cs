@@ -11,12 +11,4 @@ public static class EventManager
         if (OnKeyCollected != null)
             OnKeyCollected();
     }
-
-    public static void Dead()
-    {
-        if (OnDeath != null)
-        {
-            OnDeath();
-        }
-    }
 }
