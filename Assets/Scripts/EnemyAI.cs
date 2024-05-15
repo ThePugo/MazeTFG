@@ -276,7 +276,7 @@ public class EnemyAI : MonoBehaviour
         GameTimer.instance.StopTimer();
         SceneManager.LoadScene("GameOver");
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }
 

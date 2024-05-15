@@ -31,7 +31,7 @@ public class PauseMenu : MonoBehaviour
             player.GetComponent<FirstPersonController>().enabled = false;
             AudioListener.pause = true;
             Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
         }
     }
 
@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         player.GetComponent<FirstPersonController>().enabled = true;
         AudioListener.pause = false;
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void Restart()

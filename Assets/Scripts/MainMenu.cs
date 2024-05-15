@@ -7,8 +7,8 @@ using UnityEngine.UIElements;
 public class MainMenu : MonoBehaviour
 {
 
-    public TMP_Dropdown widthDropdown;
-    public TMP_Dropdown heightDropdown;
+    public Dropdown widthDropdown;
+    public Dropdown heightDropdown;
     public int minWidth = 5;
     public int maxWidth = 100;
 
@@ -16,14 +16,16 @@ public class MainMenu : MonoBehaviour
     {
         SetupDropdown(widthDropdown);
         SetupDropdown(heightDropdown);
+        UnityEngine.Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.Confined;
     }
 
-    void SetupDropdown(TMP_Dropdown dropdown)
+    void SetupDropdown(Dropdown dropdown)
     {
         dropdown.options.Clear();
         for (int i = minWidth; i <= maxWidth; i++)
         {
-            dropdown.options.Add(new TMP_Dropdown.OptionData(i.ToString()));
+            dropdown.options.Add(new Dropdown.OptionData(i.ToString()));
         }
         dropdown.value = 0;
 

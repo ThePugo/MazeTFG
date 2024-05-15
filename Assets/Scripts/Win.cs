@@ -12,7 +12,7 @@ public class Win : MonoBehaviour
             GameTimer.instance.StopTimer();
             UnityEngine.SceneManagement.SceneManager.LoadScene("VictoryScreen");
             Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
         }
     }
 }

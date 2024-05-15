@@ -24,6 +24,7 @@ public class MazeRender : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
         MazeCell[,] maze = mazeGenerator.GetMaze();
         WinMenu.mazeHeight = mazeGenerator.mazeHeight;
         WinMenu.mazeWidth = mazeGenerator.mazeWidth;
