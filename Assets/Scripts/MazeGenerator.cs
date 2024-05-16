@@ -795,31 +795,25 @@ public class MazeGenerator : MonoBehaviour
     void Sidewinder()
     {
         // Iterar a través de cada fila
-        for (int y = 0; y < mazeWidth; y++)
+        for (int y = 0; y < mazeHeight; y++)
         {
             int runStart = 0;
 
             // Iterar a través de cada columna
-            for (int x = 0; x < mazeHeight; x++)
+            for (int x = 0; x < mazeWidth; x++)
             {
-                // Se determina si se va a excavar hacia el este
-                bool carveEast = x < mazeHeight - 1 && (y == 0 || UnityEngine.Random.Range(0, 2) == 0);
-
-                if (carveEast)
+                // Determinar si excavar hacia el norte o continuar hacia el este
+                if (y > 0 && (x + 1 == mazeWidth || UnityEngine.Random.Range(0, 2) == 0))
+                {
+                    // Fin de la corrida actual y excavar hacia el norte
+                    int northCarveX = runStart + UnityEngine.Random.Range(0, x - runStart + 1);
+                    BreakWalls(new Vector2Int(northCarveX, y), new Vector2Int(northCarveX, y - 1));
+                    runStart = x + 1;  // Resetea el inicio de la corrida para la próxima columna
+                }
+                else if (x + 1 < mazeWidth)
                 {
                     // Excavar hacia el este
                     BreakWalls(new Vector2Int(x, y), new Vector2Int(x + 1, y));
-                }
-
-                // Se determina si se va a excavar hacia el norte
-                bool carveNorth = !carveEast || x == mazeHeight - 1;
-
-                if (carveNorth && y > 0)
-                {
-                    // Elegir una celda aleatoria del conjunto actual (run) para excavar hacia el norte
-                    int northCarveX = runStart + UnityEngine.Random.Range(0, x - runStart + 1);
-                    BreakWalls(new Vector2Int(northCarveX, y), new Vector2Int(northCarveX, y - 1));
-                    runStart = x + 1;
                 }
             }
         }

@@ -47,6 +47,7 @@ public class Footsteps : MonoBehaviour
         footstepsSound.enabled = !sprinting && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && playerController.Grounded;
         sprintSound.enabled = sprinting && playerController.Grounded && !isDrained;
 
+
         if (sprinting && !isDrained)
         {
             if (!godMode)
