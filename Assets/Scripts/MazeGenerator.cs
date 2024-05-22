@@ -7,6 +7,7 @@ using UnityEngine.Rendering.VirtualTexturing;
 using System.Text;
 using System.Linq;
 using TMPro;
+using System.Diagnostics;
 
 public class MazeGenerator : MonoBehaviour
 {
@@ -40,6 +41,11 @@ public class MazeGenerator : MonoBehaviour
 
     public MazeCell[,] GetMaze()
     {
+        /*PARA PRUEBAS
+        long memoryBefore = System.GC.GetTotalMemory(true);
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
+        */
         mazeWidth = PlayerPrefs.GetInt("MazeWidth", mazeWidth);
         mazeHeight = PlayerPrefs.GetInt("MazeHeight", mazeHeight);
         maze = new MazeCell[mazeWidth, mazeHeight];
@@ -102,6 +108,13 @@ public class MazeGenerator : MonoBehaviour
         {
             print("Maze is not perfect");
         }
+        */
+        /*PARA PRUEBAS
+        long memoryAfter = System.GC.GetTotalMemory(false);
+        long memoryUsed = memoryAfter - memoryBefore;
+        stopwatch.Stop(); // Detiene el cronómetro
+        UnityEngine.Debug.Log($"Tiempo de ejecución del algoritmo {SelectedAlgorithm}: {stopwatch.ElapsedMilliseconds} ms");
+        UnityEngine.Debug.Log($"Memoria usada por {SelectedAlgorithm}: {memoryUsed} bytes");
         */
         return maze;
     }
@@ -913,7 +926,7 @@ public class MazeGenerator : MonoBehaviour
     }
 
     // Función auxiliar para obtener el desplazamiento basado en la dirección
-    Vector2Int GetDirectionDelta(Direction direction)
+    public Vector2Int GetDirectionDelta(Direction direction)
     {
         switch (direction)
         {
@@ -979,7 +992,7 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    bool CanMove(int x, int y, Direction direction)
+    public bool CanMove(int x, int y, Direction direction)
     {
         // Este método debe verificar si se puede mover en la dirección dada desde la celda actual
         // Esto implica comprobar si no hay paredes bloqueando el movimiento en esa dirección
@@ -1024,6 +1037,10 @@ public class MazeCell
     public int x, y;
     public bool topWall;
     public bool leftWall;
+    //para pruebas
+    public bool isDeadEnd;
+    public bool isThreeWayIntersection;
+    public bool isFourWayIntersection;
 
     public Vector2Int position
     {
