@@ -82,7 +82,7 @@ public class MazeRender : MonoBehaviour
                 //Asignar llave
                 if (i == randomi && j==randomj)
                 {
-                    //Instantiate(key, new Vector3((float)i * CellSize, 0f, (float)j * CellSize), Quaternion.identity, transform);
+                    Instantiate(key, new Vector3((float)i * CellSize, 0f, (float)j * CellSize), Quaternion.identity, transform);
                 }
             }
         }
